@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ганна Верес — фінансова консультантка для сімей з дітьми</title>
+<meta name="description" content="Допомагаю сім’ям із дітьми навести лад у бюджеті, зібрати «подушку» й накопичувати на майбутнє дітей — без жорсткої економії. Фінансова діагностика сім’ї онлайн за 600 грн.">
+<meta name="theme-color" content="#4A1421">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:title" content="Ганна Верес — фінансова консультантка для сімей з дітьми">
+<meta property="og:description" content="Гроші в сім’ї, які дають спокій, а не сварки. Бюджет, подушка безпеки, накопичення на дітей і пенсію.">
+<meta property="og:image" content="assets/og.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero-1920.webp" imagesrcset="assets/hero-1200.webp 1200w, assets/hero-1920.webp 1920w" imagesizes="100vw" type="image/webp">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "#person",
+      "name": "Ганна Верес",
+      "jobTitle": "Фінансова консультантка",
+      "description": "Фінансова консультантка для сімей з дітьми: бюджет, подушка безпеки, накопичення на дітей і пенсію.",
+      "image": "assets/about-900.jpg",
+      "address": { "@type": "PostalAddress", "addressLocality": "Київ", "addressCountry": "UA" }
+    },
+    {
+      "@type": "ProfessionalService",
+      "name": "Ганна Верес — фінансові консультації для сімей",
+      "founder": { "@id": "#person" },
+      "areaServed": "UA",
+      "priceRange": "600–8900 UAH",
+      "makesOffer": [
+        { "@type": "Offer", "name": "Фінансова діагностика сім’ї", "price": "600", "priceCurrency": "UAH" },
+        { "@type": "Offer", "name": "Фінансовий план сім’ї — «Старт»", "price": "1900", "priceCurrency": "UAH" },
+        { "@type": "Offer", "name": "Фінансовий план сім’ї — «План»", "price": "3900", "priceCurrency": "UAH" },
+        { "@type": "Offer", "name": "Фінансовий план сім’ї — «Супровід»", "price": "6900", "priceCurrency": "UAH" },
+        { "@type": "Offer", "name": "Програма «Сімейний капітал» — «Самостійний»", "price": "2900", "priceCurrency": "UAH" },
+        { "@type": "Offer", "name": "Програма «Сімейний капітал» — «З кураторкою»", "price": "4900", "priceCurrency": "UAH" },
+        { "@type": "Offer", "name": "Програма «Сімейний капітал» — «Особистий»", "price": "8900", "priceCurrency": "UAH" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти до змісту</a>
+
+<!-- ===================== ШАПКА ===================== -->
+<header class="hdr" id="top">
+  <div class="hdr-in">
+    <a class="logo" href="#top" aria-label="Ганна Верес — на початок">
+      <span class="logo-mark" aria-hidden="true">ГВ</span>
+      <span class="logo-txt"><b>Ганна Верес</b><small>фінансова консультантка</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Головне меню">
+      <a href="#about">Про мене</a>
+      <a href="#method">Метод</a>
+      <a href="#calc">Калькулятор</a>
+      <div class="nav-dd">
+        <button class="nav-dd-btn" type="button" aria-expanded="false" aria-controls="dd-services">Послуги<svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg></button>
+        <div class="dd" id="dd-services">
+          <a href="#diagnostics"><span class="dd-n">1</span><span><b>Фінансова діагностика сім’ї</b><small>разова зустріч, 90 хв онлайн</small></span></a>
+          <a href="#plans"><span class="dd-n">2</span><span><b>Фінансовий план сім’ї</b><small>персональний план і підтримка</small></span></a>
+          <a href="#program"><span class="dd-n">3</span><span><b>Програма «Сімейний капітал»</b><small>групова програма, 6 тижнів</small></span></a>
+          <a href="#b2b"><span class="dd-n">4</span><span><b>Для компаній</b><small>лекції й воркшопи для команд</small></span></a>
+        </div>
+      </div>
+      <a class="nav-gift" href="#gift"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8"/><path d="M12 8C10.5 4.5 7 4 6.5 6S9 8 12 8zM12 8c1.5-3.5 5-4 5.5-2S15 8 12 8z"/></svg>Подарунок</a>
+      <a href="#reviews">Відгуки</a>
+      <a href="#faq">Питання</a>
+      <a class="btn btn-gold nav-cta" href="#contact" data-track="cta_click" data-product="checkup">Записатися на діагностику −50%</a>
+    </nav>
+    <a class="btn btn-gold btn-sm hdr-cta" href="#contact" data-track="cta_click" data-product="checkup">Записатися</a>
+    <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================== ПЕРШИЙ ЕКРАН ===================== -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-ph">
+    <picture>
+      <source type="image/webp" srcset="assets/hero-1200.webp 1200w, assets/hero-1920.webp 1920w" sizes="100vw">
+      <img src="assets/hero-1920.jpg" srcset="assets/hero-1200.jpg 1200w, assets/hero-1920.jpg 1920w" sizes="100vw" alt="Фінансова консультантка Ганна Верес у своєму кабінеті" width="1920" height="1072" fetchpriority="high">
+    </picture>
+  </div>
+  <div class="wrap hero-in">
+    <div class="hero-card glass">
+      <div class="eyebrow">Фінансова консультантка<i>✦</i>онлайн<i>✦</i>для сімей з дітьми</div>
+      <h1 id="hero-title" class="hero-t">Гроші в сім’ї, які дають <em class="mk">спокій, а&nbsp;не&nbsp;сварки</em></h1>
+      <p class="lead">Допоможу навести лад у бюджеті, зібрати «подушку» й почати відкладати на майбутнє дітей — без жорсткої економії та відмови від маленьких радощів.</p>
+      <div class="btns">
+        <a class="btn btn-gold btn-2l" href="#contact" data-track="cta_click" data-product="checkup">Записатися на консультацію<small>90 хв онлайн · 600&nbsp;грн замість <s>1&nbsp;200</s></small></a>
+        <button class="btn btn-line btn-2l" type="button" data-open="test" data-track="test_open">Перевірити фінанси сім’ї<small>безкоштовний тест · 3 хвилини</small></button>
+      </div>
+      <ul class="checks">
+        <li>Не продаю фінансових продуктів</li>
+        <li>Онлайн з будь-якої країни</li>
+        <li>План під ваш дохід</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ЦИФРИ ===================== -->
+<section class="stats dark" aria-label="Цифри досвіду">
+  <div class="wrap stats-in">
+    <div class="stat reveal"><b><span data-count="16">16</span></b><span>років у фінансах</span></div>
+    <div class="stat reveal"><b><span data-count="600">600</span>+</b><span>сімей навели лад у грошах</span></div>
+    <div class="stat reveal"><b><span data-count="1400">1&nbsp;400</span>+</b><span>консультацій</span></div>
+    <div class="stat reveal"><b><span data-count="12">12</span></b><span>потоків програми «Сімейний капітал»</span></div>
+  </div>
+</section>
+
+<!-- ===================== БОЛІ ===================== -->
+<section class="sec" id="pains" aria-labelledby="pains-t">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Знайомо?</div>
+      <h2 id="pains-t">Впізнаєте <em class="mk">свою сім’ю</em>?</h2>
+      <p>Так звучать перші повідомлення, які мені пишуть.</p>
+    </div>
+    <div class="pains">
+      <div class="pain card reveal"><span class="pn">01</span><p>«Заробляємо нормально, а до зарплати знову нуль. І незрозуміло, куди все поділося».</p></div>
+      <div class="pain card reveal"><span class="pn">02</span><p>«Кожна розмова про гроші закінчується сваркою».</p></div>
+      <div class="pain card reveal"><span class="pn">03</span><p>«Кредитка стала другою зарплатою».</p></div>
+      <div class="pain card reveal"><span class="pn">04</span><p>«Накопичень немає. Якщо хтось захворіє чи зламається машина — паніка».</p></div>
+      <div class="pain card reveal"><span class="pn">05</span><p>«Хочемо відкладати на навчання дитини, але все „з наступного місяця“».</p></div>
+      <div class="pain card reveal"><span class="pn">06</span><p>«Боїмося, що гроші знеціняться, не знаємо, де їх зберігати. А про пенсію думати страшно».</p></div>
+    </div>
+    <div class="conclusion reveal">
+      <p>Це не про «погане вміння рахувати». У більшості сімей просто немає <b>системи</b> — спільних правил, резерву й плану. І це виправляється за кілька тижнів.</p>
+      <a class="btn btn-gold" href="#contact" data-track="cta_click" data-product="checkup">Розібрати нашу ситуацію</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ДЛЯ КОГО ===================== -->
+<section class="sec sec-tint" id="for" aria-labelledby="for-t">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Для кого</div>
+      <h2 id="for-t">Допомагаю сім’ям <em class="mk">на різних етапах</em></h2>
+      <p>Цілі в кожної сім’ї свої, але починаємо завжди з ясності.</p>
+    </div>
+    <div class="grid3 sub4">
+      <article class="who card reveal">
+        <div class="who-h"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span><h3>«Гроші є, але кудись зникають»</h3></div>
+        <p class="who-s">Молоді сім’ї з малюками</p>
+        <ul class="dots"><li>живете від зарплати до зарплати;</li><li>витрачаєте «на кредитці»;</li><li>сваритеся через покупки;</li><li>немає жодного резерву.</li></ul>
+        <div class="result"><small>Результат</small>Зрозумілий бюджет і «подушка» на 3 місяці за пів року</div>
+      </article>
+      <article class="who card reveal">
+        <div class="who-h"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 9L12 4 2 9l10 5 10-5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg></span><h3>«Хочу, щоб у дитини був старт»</h3></div>
+        <p class="who-s">Батьки школярів</p>
+        <ul class="dots"><li>хочете відкладати на навчання, але не виходить;</li><li>не знаєте, скільки саме потрібно;</li><li>боїтеся, що гроші «з’їсть» інфляція;</li><li>витрати на дітей ростуть щороку.</li></ul>
+        <div class="result"><small>Результат</small>Сума й щомісячний внесок на кожну ціль дитини</div>
+      </article>
+      <article class="who card reveal">
+        <div class="who-h"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>«А що буде з нами?»</h3></div>
+        <p class="who-s">Батьки 40+</p>
+        <ul class="dots"><li>на державну пенсію не розраховуєте;</li><li>усе йде на дітей, «на себе — потім»;</li><li>сім’я без страхового захисту;</li><li>вже обпеклися на «вигідних інвестиціях».</li></ul>
+        <div class="result"><small>Результат</small>План пенсійного капіталу й захист сім’ї</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ПОРІВНЯННЯ ===================== -->
+<section class="sec" id="compare" aria-labelledby="cmp-t">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Підхід</div>
+      <h2 id="cmp-t">Не «менше витрачайте», <em class="mk">а система</em></h2>
+    </div>
+    <div class="cmp reveal">
+      <div class="cmp-col cmp-no">
+        <h3><span aria-hidden="true">✕</span> Що зазвичай радять</h3>
+        <ul>
+          <li>Відмовтеся від кави й таксі</li>
+          <li>Записуйте кожну гривню все життя</li>
+          <li>Інвестуйте в те, що «зараз росте»</li>
+          <li>Банк чи агент радить свій продукт</li>
+          <li>Гроші — справа одного з подружжя</li>
+          <li>Загальні поради з інтернету</li>
+        </ul>
+      </div>
+      <div class="cmp-col cmp-yes">
+        <h3><span aria-hidden="true">✓</span> Як працюю я</h3>
+        <ul>
+          <li>Залишаємо те, що робить життя приємним, і знаходимо реальні «діри»</li>
+          <li>Облік лише 2 місяці, далі — прості ліміти</li>
+          <li>Спершу резерв і захист, потім зрозумілі довгі накопичення</li>
+          <li>Незалежні поради: я не отримую комісій</li>
+          <li>Домовленості, у яких почуті обоє</li>
+          <li>Розрахунки під ваш дохід, дітей і цілі</li>
+        </ul>
+      </div>
+    </div>
+    <div class="center reveal"><a class="btn btn-gold" href="#contact" data-track="cta_click" data-product="checkup">Записатися на діагностику</a></div>
+  </div>
+</section>
+
+<!-- ===================== ПРО МЕНЕ ===================== -->
+<section class="sec sec-tint" id="about" aria-labelledby="about-t">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Про мене</div>
+      <h2 id="about-t">Я знаю, як це&nbsp;— <em class="mk">рахувати чужі гроші й губити свої</em></h2>
+    </div>
+    <div class="about">
+      <figure class="about-ph reveal">
+        <picture>
+          <source type="image/webp" srcset="assets/about-900.webp">
+          <img src="assets/about-900.jpg" alt="Ганна Верес, фінансова консультантка" width="900" height="1125" loading="lazy">
+        </picture>
+        <figcaption class="about-badge"><b>9 років</b><span>у банку до приватної практики</span></figcaption>
+      </figure>
+      <div class="about-txt reveal">
+        <p class="big">Мене звати Ганна Верес. Я фінансова консультантка й мама двох дітей.</p>
+        <p>Дев’ять років я працювала в банку: видавала кредити й консультувала приватних клієнтів. А у 2014-му, в декреті з першою донькою, опинилася в ситуації, з якою до мене зараз приходять сім’ї: бізнес чоловіка закрився, гривня знецінилася втричі, ми жили на кредитку.</p>
+        <p>Ми з чоловіком сіли за кухонний стіл і вперше чесно виписали всі витрати. Домовилися про прості правила. За три роки закрили борги й зібрали «подушку» на пів року. У 2022-му, коли довелося переїжджати, <b>саме цей резерв дав нам спокій</b>.</p>
+        <p>Тепер я допомагаю іншим сім’ям пройти цей шлях швидше — і без моїх помилок.</p>
+        <div class="about-cols">
+          <div>
+            <h3>Освіта й досвід</h3>
+            <ul class="dots">
+              <li>Економічний університет, «Фінанси і кредит»</li>
+              <li>Програма з особистого фінансового планування</li>
+              <li>9 років у банку, 7 років приватної практики</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Мої принципи</h3>
+            <ul class="dots">
+              <li>Не продаю фінансових продуктів і не беру комісій</li>
+              <li>Не обіцяю доходу й не раджу ризикованих схем</li>
+              <li>Не забороняю маленьких радощів</li>
+              <li>Зберігаю конфіденційність ваших цифр</li>
+            </ul>
+          </div>
+        </div>
+        <p class="sign">Ганна Верес</p>
+      </div>
+    </div>
+    <a class="bridge reveal" href="#method">Саме з цього досвіду виріс мій метод «Сімейний фундамент» <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<!-- ===================== МЕТОД ===================== -->
+<section class="sec dark" id="method" aria-labelledby="method-t">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Авторський метод</div>
+      <h2 id="method-t">«Сімейний фундамент»&nbsp;— <em class="mk">5&nbsp;кроків до спокою в грошах</em></h2>
+      <p>Будуємо, як дім: спершу фундамент, потім стіни й дах.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><span class="sn">1</span><h3>Ясність</h3><p>Бачимо, куди насправді йдуть гроші. Простий облік на 2 місяці без щоденних таблиць.</p></li>
+      <li class="step reveal"><span class="sn">2</span><h3>Домовленість</h3><p>Сімейна «фінансова рада»: спільні правила, особисті гроші кожного, жодних докорів.</p></li>
+      <li class="step reveal"><span class="sn">3</span><h3>Захист</h3><p>«Подушка» на 3–6 місяців, страхування й порядок у документах.</p></li>
+      <li class="step reveal"><span class="sn">4</span><h3>Цілі</h3><p>Рахуємо, скільки відкладати на навчання дітей, житло, відпустку.</p></li>
+      <li class="step reveal"><span class="sn">5</span><h3>Капітал</h3><p>Довгі накопичення й пенсія — зрозумілими інструментами, без ризикованих експериментів.</p></li>
+    </ol>
+    <blockquote class="quote reveal">
+      <p>«Спокій у грошах дає не велика зарплата, а система, яку сім’я тримає разом»</p>
+      <cite>— Ганна Верес</cite>
+    </blockquote>
+    <div class="center reveal"><a class="btn btn-gold" href="#contact" data-track="cta_click" data-product="checkup">Почати з діагностики</a></div>
+  </div>
+</section>
+
+<!-- ===================== КАЛЬКУЛЯТОР ===================== -->
+<section class="sec" id="calc" aria-labelledby="calc-t">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Порахуйте самі</div>
+      <h2 id="calc-t">Скільки відкладати, <em class="mk">щоб мрія стала планом</em></h2>
+      <p>Оберіть ціль і подивіться, яку суму потрібно відкладати щомісяця.</p>
+    </div>
+    <div class="calc reveal">
+      <form class="calc-form card" id="calcForm" novalidate>
+        <fieldset class="goals">
+          <legend>Ціль</legend>
+          <label><input type="radio" name="goal" value="Навчання дитини" data-sum="300000" data-years="10" checked><span>🎓 Навчання дитини</span></label>
+          <label><input type="radio" name="goal" value="Подушка безпеки" data-sum="120000" data-years="2"><span>🛟 Подушка безпеки</span></label>
+          <label><input type="radio" name="goal" value="Житло" data-sum="1500000" data-years="10"><span>🏡 Житло</span></label>
+          <label><input type="radio" name="goal" value="Відпустка" data-sum="80000" data-years="1"><span>🌊 Відпустка</span></label>
+          <label><input type="radio" name="goal" value="Пенсійний капітал" data-sum="3000000" data-years="20"><span>🌿 Пенсійний капітал</span></label>
+          <label><input type="radio" name="goal" value="Своя ціль" data-sum="200000" data-years="5"><span>✦ Своя ціль</span></label>
+        </fieldset>
+        <div class="fields">
+          <label class="fld"><span>Потрібна сума, грн</span><input type="text" inputmode="numeric" id="cSum" value="300 000" autocomplete="off"></label>
+          <label class="fld"><span>Вже накопичено, грн</span><input type="text" inputmode="numeric" id="cHave" value="0" autocomplete="off"></label>
+        </div>
+        <label class="fld range"><span>Через скільки років: <b id="cYearsOut">10</b></span><input type="range" id="cYears" min="1" max="30" value="10"></label>
+        <fieldset class="seg">
+          <legend>Як зберігати</legend>
+          <label><input type="radio" name="rate" value="0"><span>Під подушкою<small>0%</small></span></label>
+          <label><input type="radio" name="rate" value="8" checked><span>Консервативно<small>≈8% річних</small></span></label>
+          <label><input type="radio" name="rate" value="12"><span>Помірно<small>≈12% річних</small></span></label>
+        </fieldset>
+      </form>
+      <div class="calc-res dark-card" aria-live="polite">
+        <small>Відкладайте щомісяця</small>
+        <div class="calc-sum"><span id="cOut">1 640</span>&nbsp;грн</div>
+        <p id="cNote" class="calc-note">Без відсотків знадобилося б 2 500 грн на місяць.</p>
+        <div class="calc-bar" aria-hidden="true"><i id="cBarOwn"></i><i id="cBarGrow"></i></div>
+        <div class="calc-legend"><span><i class="l1"></i>Ваші внески: <b id="cOwn">196 800</b> грн</span><span><i class="l2"></i>Дохід: <b id="cGrow">103 200</b> грн</span></div>
+        <button class="btn btn-gold" type="button" id="calcToForm" data-track="calc_to_form">Скласти реальний план на діагностиці</button>
+        <p class="tiny">Розрахунок орієнтовний і не враховує інфляцію та податки. Це не інвестиційна порада.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ФОРМАТИ ===================== -->
+<section class="sec sec-tint" id="formats" aria-labelledby="formats-t">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Формати</div>
+      <h2 id="formats-t">Оберіть, <em class="mk">з чого почати</em></h2>
+    </div>
+    <div class="formats">
+      <a class="fmt card reveal" href="#gift"><small>Спробувати самостійно</small><h3>Подарунок</h3><p>Таблиця бюджету, чекліст і гайд про подушку безпеки</p><b class="fmt-p">Подарунок</b><span class="fmt-l">Забрати подарунок →</span></a>
+      <a class="fmt card fmt-hot reveal" href="#services"><small>Зрозуміти, з чого почати</small><h3>Фінансова діагностика сім’ї</h3><p>90 хвилин онлайн: розбір ситуації й перші кроки</p><b class="fmt-p"><s>1&nbsp;200</s> 600&nbsp;грн</b><span class="fmt-l">Записатися →</span></a>
+      <a class="fmt card reveal" href="#plans"><small>Персональний план і підтримка</small><h3>Фінансовий план сім’ї</h3><p>Від однієї зустрічі до супроводу на 2 місяці</p><b class="fmt-p">від 1&nbsp;900&nbsp;грн</b><span class="fmt-l">Обрати тариф →</span></a>
+      <a class="fmt card reveal" href="#program"><small>У групі, з домашніми завданнями</small><h3>Програма «Сімейний капітал»</h3><p>6 тижнів від хаосу в грошах до плану накопичень</p><b class="fmt-p">від 2&nbsp;900&nbsp;грн</b><span class="fmt-l">Про програму →</span></a>
+      <a class="fmt card reveal" href="#b2b"><small>Для HR і керівників</small><h3>Для компаній</h3><p>Лекції й воркшопи з фінансової грамотності</p><b class="fmt-p">від 8&nbsp;000&nbsp;грн</b><span class="fmt-l">Дізнатися більше →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ПОСЛУГИ ===================== -->
+<section class="sec" id="services" aria-labelledby="services-t">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Послуги</div>
+      <h2 id="services-t">Особиста робота <em class="mk">з вашою сім’єю</em></h2>
+      <p>Два кроки: спершу діагностика, потім (за бажанням) персональний фінансовий план. Онлайн (Zoom / Google Meet) · українська мова · можна вдвох із партнером.</p>
+    </div>
+    <ul class="tags reveal">
+      <li>бюджет без сварок</li><li>кредити й борги</li><li>подушка безпеки</li><li>накопичення на дітей</li><li>житло</li><li>пенсія</li><li>страхування</li><li>гроші в декреті</li><li>гроші після переїзду</li>
+    </ul>
+
+    <div class="stage reveal" id="diagnostics"><span class="stage-n">1</span><div><small>Крок 1 · окрема послуга</small><h3>Почніть із діагностики</h3><p>Разова зустріч, щоб зрозуміти, що відбувається з грошима, і отримати перші кроки.</p></div></div>
+    <div class="checkup reveal">
+      <div class="checkup-l">
+        <span class="badge">Для знайомства −50%</span>
+        <h3>Фінансова діагностика сім’ї</h3>
+        <p>За 90 хвилин розберемо доходи, витрати, борги й цілі. Ви отримаєте 3 першочергові кроки й зрозумієте, чи потрібен вам повний план.</p>
+      </div>
+      <div class="checkup-r">
+        <div class="price"><s>1&nbsp;200&nbsp;грн</s><b>600&nbsp;грн</b></div>
+        <a class="btn btn-gold" href="#contact" data-track="cta_click" data-product="checkup">Записатися на діагностику −50%</a>
+      </div>
+    </div>
+
+    <div class="stage reveal" id="plans"><span class="stage-n">2</span><div><small>Крок 2 · окрема послуга, 3 тарифи</small><h3>Фінансовий план сім’ї з підтримкою</h3><p>Для тих, хто хоче детальний письмовий план і супровід. Оберіть тариф — від однієї зустрічі до двох місяців разом.</p></div></div>
+    <div class="grid3 sub5 tariffs">
+      <article class="tariff card reveal">
+        <div class="t-name"><h3>Старт</h3><small>Коли потрібен план і ви готові діяти самі</small></div>
+        <div class="t-price"><b>1&nbsp;900&nbsp;грн</b></div>
+        <div class="t-unit">1 зустріч</div>
+        <ul class="ticks"><li>1 зустріч 90 хв</li><li>аналіз бюджету</li><li>письмовий фінансовий план</li><li>таблиця бюджету</li></ul>
+        <button class="btn btn-line" type="button" data-product="plan-start" data-track="tariff_click">Обрати «Старт»</button>
+      </article>
+      <article class="tariff card tariff-hot reveal">
+        <span class="t-flag">Найчастіше обирають</span>
+        <div class="t-name"><h3>План</h3><small>Коли потрібні домовленості в парі й підтримка</small></div>
+        <div class="t-price"><s>4&nbsp;500</s><b>3&nbsp;900&nbsp;грн</b></div>
+        <div class="t-unit">1&nbsp;300&nbsp;грн за зустріч</div>
+        <ul class="ticks"><li>3 зустрічі за 1 місяць</li><li>аналіз бюджету й боргів</li><li>письмовий план: резерв, цілі, захист</li><li>сімейна «фінансова рада» вдвох</li><li>2 тижні підтримки в Telegram</li></ul>
+        <button class="btn btn-gold" type="button" data-product="plan-plan" data-track="tariff_click">Обрати «План»</button>
+      </article>
+      <article class="tariff card reveal">
+        <div class="t-name"><h3>Супровід</h3><small>Коли хочете пройти весь шлях разом</small></div>
+        <div class="t-price"><s>8&nbsp;000</s><b>6&nbsp;900&nbsp;грн</b></div>
+        <div class="t-unit">1&nbsp;380&nbsp;грн за зустріч</div>
+        <ul class="ticks"><li>5 зустрічей за 2 місяці</li><li>усе з тарифу «План»</li><li>розрахунок цілей дітей і пенсії</li><li>чат підтримки 2 місяці</li><li>контрольна зустріч через 3 місяці</li></ul>
+        <button class="btn btn-line" type="button" data-product="plan-escort" data-track="tariff_click">Обрати «Супровід»</button>
+      </article>
+    </div>
+    <p class="note-c reveal">Можна оплатити двома частинами. Вартість діагностики зараховується, якщо протягом 14 днів ви обираєте план.</p>
+  </div>
+</section>
+
+<!-- ===================== ПРОГРАМА ===================== -->
+<section class="sec dark" id="program" aria-labelledby="program-t">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Групова програма</div>
+      <h2 id="program-t">«Сімейний капітал»&nbsp;— <em class="mk">6&nbsp;тижнів до фінансового спокою</em></h2>
+      <p>Покрокова програма для пар і батьків: від хаосу в грошах — до бюджету, резерву й плану накопичень.</p>
+    </div>
+
+    <div class="launch reveal">
+      <div class="launch-date"><small>Старт потоку</small><b data-cfg="program.startLabel">19 жовтня 2026</b></div>
+      <div class="timer" id="timer" aria-label="До старту програми">
+        <div><b data-t="d">00</b><span>днів</span></div>
+        <div><b data-t="h">00</b><span>годин</span></div>
+        <div><b data-t="m">00</b><span>хвилин</span></div>
+        <div><b data-t="s">00</b><span>секунд</span></div>
+      </div>
+      <div class="seats">
+        <small>Залишилось <b id="seatsLeft">7</b> із <span id="seatsTotal">20</span> місць</small>
+        <div class="seats-bar"><i id="seatsBar"></i></div>
+      </div>
+    </div>
+
+    <ul class="pformat reveal">
+      <li>6 уроків у записі</li><li>щотижневі живі ефіри</li><li>чат потоку</li><li>шаблони й таблиці</li><li>доступ на 6 місяців</li>
+    </ul>
+
+    <div class="program">
+      <ol class="weeks reveal">
+        <li><span>Тиждень 1</span><h3>Ясність</h3><p>Облік без стресу: куди йдуть гроші та де «діри».</p></li>
+        <li><span>Тиждень 2</span><h3>Домовленість</h3><p>Сімейна фінансова рада: правила, ролі, особисті гроші.</p></li>
+        <li><span>Тиждень 3</span><h3>Бюджет</h3><p>Ліміти, «конверти» й бюджет, який не треба контролювати щодня.</p></li>
+        <li><span>Тиждень 4</span><h3>Захист</h3><p>Подушка безпеки, страхування, документи й «план Б».</p></li>
+        <li><span>Тиждень 5</span><h3>Цілі дітей</h3><p>Скільки відкладати на навчання й де зберігати.</p></li>
+        <li><span>Тиждень 6</span><h3>Капітал</h3><p>Пенсія й довгі накопичення: базові інструменти простими словами.</p></li>
+      </ol>
+      <div class="presults reveal">
+        <h3>Після програми ви:</h3>
+        <ul class="ticks">
+          <li>ведете бюджет, який займає 15 хвилин на тиждень;</li>
+          <li>маєте план закриття боргів або вже закриту кредитку;</li>
+          <li>почали формувати «подушку»;</li>
+          <li>знаєте суму й щомісячний внесок на кожну ціль.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid3 sub5 tariffs">
+      <article class="tariff card reveal">
+        <div class="t-name"><h3>Самостійний</h3><small>Якщо ви дисципліновані й любите свій темп</small></div>
+        <div class="t-price"><b>2&nbsp;900&nbsp;грн</b></div>
+        <div class="t-unit">≈ 480&nbsp;грн за тиждень</div>
+        <ul class="ticks"><li>6 уроків у записі</li><li>шаблони й таблиці</li><li>чат потоку</li><li>доступ 6 місяців</li></ul>
+        <button class="btn btn-line" type="button" data-product="prog-self" data-track="tariff_click">Обрати «Самостійний»</button>
+      </article>
+      <article class="tariff card tariff-hot reveal">
+        <span class="t-flag">Найчастіше обирають</span>
+        <div class="t-name"><h3>З кураторкою</h3><small>Якщо потрібні підтримка й зворотний зв’язок</small></div>
+        <div class="t-price"><b>4&nbsp;900&nbsp;грн</b></div>
+        <div class="t-unit">≈ 820&nbsp;грн за тиждень</div>
+        <ul class="ticks"><li>усе з «Самостійного»</li><li>6 живих ефірів із Ганною</li><li>перевірка домашніх завдань</li><li>розбір вашого бюджету кураторкою</li></ul>
+        <button class="btn btn-gold" type="button" data-product="prog-curator" data-track="tariff_click">Обрати «З кураторкою»</button>
+      </article>
+      <article class="tariff card reveal">
+        <span class="t-flag t-flag-soft">Лише 5 місць</span>
+        <div class="t-name"><h3>Особистий</h3><small>Якщо хочете програму й особистий план</small></div>
+        <div class="t-price"><b>8&nbsp;900&nbsp;грн</b></div>
+        <div class="t-unit">≈ 1&nbsp;480&nbsp;грн за тиждень</div>
+        <ul class="ticks"><li>усе з «З кураторкою»</li><li>2 особисті зустрічі з Ганною</li><li>персональний фінансовий план</li><li>підтримка в Telegram 2 місяці</li></ul>
+        <button class="btn btn-line" type="button" data-product="prog-personal" data-track="tariff_click">Обрати «Особистий»</button>
+      </article>
+    </div>
+    <p class="note-c reveal">Місце бронюється передоплатою 500&nbsp;грн. Можна оплатити двома частинами.</p>
+  </div>
+</section>
+
+<!-- ===================== ПОДАРУНОК ===================== -->
+<section class="sec" id="gift" aria-labelledby="gift-t">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="gift-big" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8"/><path d="M12 8C10.5 4.5 7 4 6.5 6S9 8 12 8zM12 8c1.5-3.5 5-4 5.5-2S15 8 12 8z"/></svg></div>
+      <div class="eyebrow">Подарунок для кожного</div>
+      <h2 id="gift-t">Заберіть подарунок&nbsp;— <em class="mk">почніть уже сьогодні</em></h2>
+      <p>Три матеріали, з яких я починаю роботу з кожною сім’єю. Без оплати й реєстрації — просто відкрийте або завантажте.</p>
+    </div>
+    <div class="grid3 sub4">
+      <article class="gift card reveal"><span class="gift-ribbon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8"/><path d="M12 8C10.5 4.5 7 4 6.5 6S9 8 12 8zM12 8c1.5-3.5 5-4 5.5-2S15 8 12 8z"/></svg>Подарунок</span>
+        <div class="gift-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11M15 9v11"/></svg></div>
+        <h3>Таблиця «Сімейний бюджет»</h3>
+        <p>Готовий шаблон доходів, витрат і лімітів. Відкривається в Excel і Google Таблицях.</p>
+        <button class="btn btn-gold" type="button" id="dlBudget" data-track="gift_download">Завантажити таблицю</button>
+      </article>
+      <article class="gift card reveal"><span class="gift-ribbon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8"/><path d="M12 8C10.5 4.5 7 4 6.5 6S9 8 12 8zM12 8c1.5-3.5 5-4 5.5-2S15 8 12 8z"/></svg>Подарунок</span>
+        <div class="gift-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M3.5 6l1.5 1.5L7.5 5M3.5 12l1.5 1.5L7.5 11M3.5 18l1.5 1.5L7.5 17"/></svg></div>
+        <h3>Чекліст «10 витрат, які непомітно з’їдають гроші»</h3>
+        <p>Пройдіться ним за 10 хвилин і знайдіть перші 2–5 тис. грн на місяць.</p>
+        <button class="btn btn-gold" type="button" data-open="checklist" data-track="gift_open">Відкрити чекліст</button>
+      </article>
+      <article class="gift card reveal"><span class="gift-ribbon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8"/><path d="M12 8C10.5 4.5 7 4 6.5 6S9 8 12 8zM12 8c1.5-3.5 5-4 5.5-2S15 8 12 8z"/></svg>Подарунок</span>
+        <div class="gift-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></div>
+        <h3>Гайд «Подушка безпеки за 6 кроків»</h3>
+        <p>Скільки відкладати, де зберігати й що робити, якщо дохід нестабільний.</p>
+        <button class="btn btn-gold" type="button" data-open="guide" data-track="gift_open">Відкрити гайд</button>
+      </article>
+    </div>
+    <p class="note-c reveal">Чекліст і гайд відкриваються у вікні — їх можна зберегти в PDF.</p>
+  </div>
+</section>
+
+<!-- ===================== ДЛЯ КОМПАНІЙ ===================== -->
+<section class="sec sec-tint" id="b2b" aria-labelledby="b2b-t">
+  <div class="wrap">
+    <div class="b2b reveal">
+      <div class="b2b-l">
+        <div class="eyebrow">Для компаній</div>
+        <h2 id="b2b-t">Фінансова грамотність&nbsp;— <em class="mk">турбота про команду</em></h2>
+        <p>Фінансовий стрес забирає фокус і енергію. Допоможу вашим працівникам навести лад у грошах.</p>
+        <p class="muted">Для HR і компаній від 20 працівників: ІТ, виробництва, медичні заклади.</p>
+        <div class="b2b-price">від <b>8&nbsp;000&nbsp;грн</b></div>
+        <button class="btn btn-gold" type="button" data-product="b2b" data-track="tariff_click">Отримати пропозицію для компанії</button>
+      </div>
+      <ul class="b2b-r">
+        <li class="card"><b>Лекція «Бюджет без сварок»</b><span>60 хв · онлайн або офлайн</span></li>
+        <li class="card"><b>Воркшоп «Подушка безпеки й цілі»</b><span>120 хв · з практикою</span></li>
+        <li class="card"><b>Цикл із 4 зустрічей</b><span>для команд, які хочуть системних змін</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== КЕЙСИ ===================== -->
+<section class="sec" id="cases" aria-labelledby="cases-t">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Історії</div>
+      <h2 id="cases-t">Як змінюється <em class="mk">життя сімей</em></h2>
+    </div>
+    <div class="grid3 sub3">
+      <article class="case card reveal">
+        <div class="case-h"><h3>Олена й Андрій, 2 дітей, Львів</h3><span class="ptag">Фінансовий план «План»</span></div>
+        <div class="case-a"><small>Точка А</small><p>Дохід 38&nbsp;000&nbsp;грн, борг на кредитці 27&nbsp;000&nbsp;грн, накопичень немає, сварки щомісяця.</p></div>
+        <div class="case-b"><small>Точка Б · через 5 місяців</small><p>Кредитку закрито, «подушка» 45&nbsp;000&nbsp;грн, щомісяця 1&nbsp;500&nbsp;грн на навчання старшого.</p></div>
+      </article>
+      <article class="case card reveal">
+        <div class="case-h"><h3>Ірина, мама в декреті, Київ</h3><span class="ptag">Програма «Сімейний капітал»</span></div>
+        <div class="case-a"><small>Точка А</small><p>Жила на гроші чоловіка, соромилася просити, жодних особистих накопичень.</p></div>
+        <div class="case-b"><small>Точка Б · через 3 місяці</small><p>Спільний бюджет з особистими грошима обох, власні накопичення 1&nbsp;000&nbsp;грн на місяць, план повернення до роботи.</p></div>
+      </article>
+      <article class="case card reveal">
+        <div class="case-h"><h3>Марта й Сергій, 42 і 44 роки</h3><span class="ptag">«Супровід»</span></div>
+        <div class="case-a"><small>Точка А</small><p>«Пенсія колись потім», 60&nbsp;000&nbsp;грн втратили на «вигідній інвестиції» знайомого.</p></div>
+        <div class="case-b"><small>Точка Б · через 2 місяці</small><p>Розрахований пенсійний капітал, 4&nbsp;000&nbsp;грн на місяць на довгі накопичення, страхування життя обох.</p></div>
+      </article>
+    </div>
+    <div class="center reveal"><a class="btn btn-gold" href="#contact" data-track="cta_click" data-product="checkup">Хочу такий самий план</a></div>
+  </div>
+</section>
+
+<!-- ===================== ВІДГУКИ ===================== -->
+<section class="sec sec-tint" id="reviews" aria-labelledby="reviews-t">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Відгуки</div>
+      <h2 id="reviews-t">Що кажуть <em class="mk">сім’ї</em></h2>
+    </div>
+    <div class="grid3 sub3 reviews">
+      <article class="rev card reveal"><h3>«Перестали сваритися через гроші»</h3><div><div class="stars" aria-label="5 з 5">★★★★★</div><p>«Думала, проблема в тому, що чоловік багато витрачає. На діагностиці з’ясувалося, що ми обоє просто не знали, скільки в нас насправді йде на їжу й доставку. <mark>Тепер раз на тиждень 15 хвилин — і жодних сварок.</mark>»</p></div><footer><b>Юлія, Київ</b><span class="ptag">Фінансова діагностика сім’ї</span></footer></article>
+      <article class="rev card reveal"><h3>«Закрили кредитку за 4 місяці»</h3><div><div class="stars" aria-label="5 з 5">★★★★★</div><p>«<mark>Уперше за три роки ми живемо без кредитки.</mark> Ганна не забороняла нам нічого, просто показала, де гроші „витікали“.»</p></div><footer><b>Андрій, Львів</b><span class="ptag">«План»</span></footer></article>
+      <article class="rev card reveal"><h3>«Нарешті відкладаємо на навчання доньки»</h3><div><div class="stars" aria-label="5 з 5">★★★★★</div><p>«Ми роками говорили „треба відкладати“. <mark>Тепер у нас є сума, термін і щомісячний внесок.</mark> Звучить просто, але самі ми до цього не дійшли.»</p></div><footer><b>Наталія, Дніпро</b><span class="ptag">«Сімейний капітал»</span></footer></article>
+      <article class="rev card reveal"><h3>«Без тиску й продажів»</h3><div><div class="stars" aria-label="5 з 5">★★★★★</div><p>«Боялася, що мені продаватимуть страховку. <mark>Ганна жодного разу нічого не нав’язала</mark>, лише пояснила варіанти й порахувала.»</p></div><footer><b>Оксана, Варшава</b><span class="ptag">«Супровід»</span></footer></article>
+      <article class="rev card reveal"><h3>«Моя власна подушка»</h3><div><div class="stars" aria-label="5 з 5">★★★★★</div><p>«У декреті я почувалася залежною. <mark>Тепер у мене свої накопичення, і це про гідність, а не про гроші.</mark>»</p></div><footer><b>Ірина, Київ</b><span class="ptag">«Сімейний капітал»</span></footer></article>
+      <article class="rev card reveal"><h3>«Корисно для всієї команди»</h3><div><div class="stars" aria-label="5 з 5">★★★★★</div><p>«Після воркшопу люди ще тиждень обговорювали свої бюджети в чаті. <mark>Найкращий відгук на внутрішнє навчання за рік.</mark>»</p></div><footer><b>Марина, HR-менеджерка ІТ-компанії</b><span class="ptag">Для компаній</span></footer></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ЯК ПОЧАТИ ===================== -->
+<section class="sec" id="start" aria-labelledby="start-t">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="eyebrow">Як почати</div>
+      <h2 id="start-t">Від заявки до плану&nbsp;— <em class="mk">4&nbsp;кроки</em></h2>
+    </div>
+    <ol class="how">
+      <li class="reveal"><span>1</span><h3>Заявка</h3><p>Залиште контакти — я напишу протягом дня.</p></li>
+      <li class="reveal"><span>2</span><h3>Діагностика</h3><p>90 хвилин онлайн: розбираємо вашу ситуацію.</p></li>
+      <li class="reveal"><span>3</span><h3>План</h3><p>Отримуєте перші кроки або обираєте повний план.</p></li>
+      <li class="reveal"><span>4</span><h3>Результат</h3><p>Перші зміни в бюджеті вже за місяць.</p></li>
+    </ol>
+    <div class="center reveal"><a class="btn btn-gold" href="#contact" data-track="cta_click">Залишити заявку</a></div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="sec sec-tint" id="faq" aria-labelledby="faq-t">
+  <div class="wrap narrow">
+    <div class="sh reveal">
+      <div class="eyebrow">Питання</div>
+      <h2 id="faq-t">Часті <em class="mk">питання</em></h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>У нас невеликий дохід. Чи є сенс?</summary><p>Так. Що менше грошей, то дорожча кожна помилка. Система працює з будь-яким доходом, а перші «знайдені» гроші часто перекривають вартість консультації.</p></details>
+      <details><summary>Чоловік (дружина) не хоче брати участі. Що робити?</summary><p>Почніть самі. На діагностиці розберемо, як говорити про гроші без тиску. Часто партнер долучається, коли бачить перші результати.</p></details>
+      <details><summary>Ви продаєте страховки чи інвестиційні продукти?</summary><p>Ні. Я не співпрацюю з банками, страховими й брокерами та не отримую комісій. Ви платите лише за консультацію.</p></details>
+      <details><summary>Ви скажете, куди інвестувати?</summary><p>Я поясню, які інструменти існують, їхні ризики й що пасує саме вашим цілям. Рішення завжди приймаєте ви. Моя консультація не є індивідуальною інвестиційною порадою.</p></details>
+      <details><summary>У нас кредити. З чого почати?</summary><p>Саме з діагностики: складемо порядок закриття боргів і мінімальний резерв, щоб не брати нових.</p></details>
+      <details><summary>Чи це конфіденційно?</summary><p>Так. Ваші цифри й історія лишаються між нами. Для роботи я не прошу паролів, доступів до банкінгу чи сканів документів.</p></details>
+      <details><summary>Скільки часу займає?</summary><p>Зустріч — 90 хвилин. Далі — 15–20 хвилин на тиждень на облік. У програмі — 1–2 години на тиждень.</p></details>
+      <details><summary>Можна перенести зустріч?</summary><p>Так, безкоштовно — якщо попередите щонайменше за 24 години.</p></details>
+      <details><summary>А якщо не допоможе?</summary><p>Якщо після діагностики ви відчуєте, що вона була марною, я поверну кошти. За програмою — повернення протягом перших 7 днів.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ФІНАЛЬНИЙ ЗАКЛИК ===================== -->
+<section class="sec dark final" id="contact" aria-labelledby="contact-t">
+  <div class="wrap final-in">
+    <div class="final-l reveal">
+      <div class="eyebrow">Почнімо</div>
+      <h2 id="contact-t">Ваша сім’я заслуговує <em class="mk">на спокій у грошах</em></h2>
+      <p>Залиште заявку — я напишу протягом дня й підберу зручний час.</p>
+      <ul class="checks checks-dark">
+        <li>Відповідь протягом дня</li>
+        <li>Діагностика 600&nbsp;грн замість 1&nbsp;200&nbsp;грн</li>
+        <li>Повернення коштів, якщо не було користі</li>
+      </ul>
+      <div class="direct">
+        <small>Або напишіть напряму</small>
+        <div class="direct-l">
+          <a data-href="contacts.telegram" href="#" target="_blank" rel="noopener" data-track="messenger_click">Telegram</a>
+          <a data-href="contacts.viber" href="#" data-track="messenger_click">Viber</a>
+          <a data-href="contacts.instagram" href="#" target="_blank" rel="noopener" data-track="messenger_click">Instagram</a>
+          <a data-href="mailto:contacts.email" href="#">Email</a>
+        </div>
+      </div>
+    </div>
+    <form class="lead-form glass reveal" id="leadForm" novalidate>
+      <div class="fld">
+        <label for="fName">Ім’я*</label>
+        <input id="fName" name="name" type="text" autocomplete="given-name" placeholder="Як до вас звертатися" required>
+        <span class="err" id="fNameErr" hidden>Вкажіть, будь ласка, ім’я</span>
+      </div>
+      <div class="fld">
+        <label for="fPhone">Телефон*</label>
+        <input id="fPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+380 67 123 45 67" required>
+        <span class="err" id="fPhoneErr" hidden>Перевірте номер телефону: наприклад, +380 67 123 45 67</span>
+      </div>
+      <fieldset class="fld chips">
+        <legend>Де зручно спілкуватися</legend>
+        <label><input type="radio" name="messenger" value="Telegram" checked><span>Telegram</span></label>
+        <label><input type="radio" name="messenger" value="Viber"><span>Viber</span></label>
+        <label><input type="radio" name="messenger" value="WhatsApp"><span>WhatsApp</span></label>
+        <label><input type="radio" name="messenger" value="Дзвінок"><span>Дзвінок</span></label>
+      </fieldset>
+      <div class="fld">
+        <label for="fProduct">Що вас цікавить</label>
+        <select id="fProduct" name="product">
+          <option value="checkup">Фінансова діагностика −50% — 600 грн</option>
+          <optgroup label="Фінансовий план сім’ї">
+            <option value="plan-start">«Старт» — 1 900 грн</option>
+            <option value="plan-plan">«План» — 3 900 грн</option>
+            <option value="plan-escort">«Супровід» — 6 900 грн</option>
+          </optgroup>
+          <optgroup label="Програма «Сімейний капітал»">
+            <option value="prog-self">«Самостійний» — 2 900 грн</option>
+            <option value="prog-curator">«З кураторкою» — 4 900 грн</option>
+            <option value="prog-personal">«Особистий» — 8 900 грн</option>
+          </optgroup>
+          <option value="b2b">Для компаній</option>
+          <option value="unknown">Ще не знаю — допоможіть обрати</option>
+        </select>
+      </div>
+      <div class="fld">
+        <label for="fComment">Коментар <small>(необов’язково)</small></label>
+        <textarea id="fComment" name="comment" rows="3" placeholder="Наприклад: хочемо закрити кредитку й почати відкладати на навчання"></textarea>
+      </div>
+      <div class="attach" id="attach" hidden></div>
+      <label class="agree">
+        <input type="checkbox" id="fAgree" required>
+        <span>Погоджуюся з <button type="button" class="link" data-open="privacy">політикою конфіденційності</button>*</span>
+      </label>
+      <span class="err" id="fAgreeErr" hidden>Потрібна ваша згода на обробку даних</span>
+      <button class="btn btn-gold btn-wide" type="submit" id="fSubmit">Надіслати заявку</button>
+      <p class="tiny">Ваші дані не передаються третім особам.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== ФУТЕР ===================== -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div class="ftr-brand">
+        <a class="logo logo-light" href="#top"><span class="logo-mark" aria-hidden="true">ГВ</span><span class="logo-txt"><b>Ганна Верес</b><small>фінансова консультантка для сімей з дітьми</small></span></a>
+      </div>
+      <nav class="ftr-nav" aria-label="Меню у футері">
+        <a href="#about">Про мене</a><a href="#method">Метод</a><a href="#calc">Калькулятор</a><a href="#services">Послуги</a><a href="#program">Програма</a><a href="#gift">Подарунок</a><a href="#b2b">Для компаній</a><a href="#reviews">Відгуки</a><a href="#faq">Питання</a>
+      </nav>
+      <div class="ftr-contacts">
+        <a data-href="contacts.telegram" href="#" target="_blank" rel="noopener">Telegram</a>
+        <a data-href="contacts.instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+        <a data-href="mailto:contacts.email" data-text="contacts.email" href="#">email</a>
+        <a data-href="tel:contacts.phone" data-text="contacts.phoneLabel" href="#">телефон</a>
+      </div>
+    </div>
+    <div class="ftr-legal">
+      <p><span data-cfg="legal.fop">ФОП</span>, РНОКПП <span data-cfg="legal.rnokpp">0000000000</span> · <button type="button" class="link" data-open="offer">Публічна оферта</button> · <button type="button" class="link" data-open="privacy">Політика конфіденційності</button></p>
+      <p class="disc">Інформація на сайті має освітній характер і не є індивідуальною інвестиційною, податковою чи юридичною порадою. Консультантка не є фінансовою установою, не залучає й не зберігає кошти клієнтів і не керує їхніми активами. Результати залежать від доходів, витрат і дій кожної сім’ї.</p>
+      <p class="disc">Якщо борги стали непосильними — безоплатна правова допомога: <a href="tel:0800213103">0&nbsp;800&nbsp;213&nbsp;103</a> (цілодобово, безкоштовно).</p>
+      <p class="copy">© <span data-cfg="legal.year">2026</span> Ганна Верес</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Плаваюча кнопка месенджера (телефон) -->
+<a class="fab" data-href="contacts.telegram" href="#" target="_blank" rel="noopener" aria-label="Написати в Telegram" data-track="messenger_click">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 4.5L2.8 11.7c-.9.4-.9 1.6 0 1.9l4.6 1.5 1.8 5.5c.2.7 1.1.9 1.6.4l2.6-2.4 4.8 3.5c.6.4 1.4.1 1.6-.6l3.3-15.2c.2-.9-.7-1.6-1.6-1.3zM9.6 14.6l8.2-6.9-6.5 8.3-.3 3-1.4-4.4z"/></svg>
+</a>
+
+<!-- Cookie-банер -->
+<div class="cookie glass" id="cookie" hidden>
+  <p>Сайт використовує cookies для аналітики, щоб ставати зручнішим. <button type="button" class="link" data-open="privacy">Детальніше</button></p>
+  <div class="cookie-b"><button class="btn btn-line btn-sm" type="button" data-cookie="no">Лише необхідні</button><button class="btn btn-gold btn-sm" type="button" data-cookie="yes">Погоджуюся</button></div>
+</div>
+
+<!-- ===================== МОДАЛЬНІ ВІКНА ===================== -->
+<div class="modal" id="m-test" role="dialog" aria-modal="true" aria-labelledby="test-title" hidden>
+  <div class="modal-box">
+    <button class="modal-x" type="button" data-close aria-label="Закрити">×</button>
+    <div class="test" id="test">
+      <div class="test-head">
+        <div class="eyebrow">Тест · 10 питань</div>
+        <h2 id="test-title">Наскільки фінансово захищена ваша сім’я?</h2>
+        <div class="test-prog" aria-hidden="true"><i id="testBar"></i></div>
+        <p class="test-count" id="testCount">Питання 1 з 10</p>
+      </div>
+      <div id="testBody"></div>
+      <div class="test-nav"><button class="btn btn-line btn-sm" type="button" id="testBack" hidden>← Назад</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="m-checklist" role="dialog" aria-modal="true" aria-labelledby="cl-title" hidden>
+  <div class="modal-box doc">
+    <button class="modal-x" type="button" data-close aria-label="Закрити">×</button>
+    <div class="doc-body printable">
+      <div class="eyebrow">Подарунок · Ганна Верес</div>
+      <h2 id="cl-title">10 витрат, які непомітно з’їдають гроші</h2>
+      <p>Відкрийте виписку з картки за останній місяць і пройдіться списком. Відмічайте те, що знайшли у себе.</p>
+      <ol class="cl">
+        <li><label><input type="checkbox"><span><b>Підписки, якими не користуєтеся.</b> Стрімінги, застосунки, хмари, «пробні періоди», що стали платними.</span></label></li>
+        <li><label><input type="checkbox"><span><b>Доставка їжі «бо втомилися».</b> Порахуйте суму за місяць — часто це 3–6 тис. грн.</span></label></li>
+        <li><label><input type="checkbox"><span><b>Покупки «по дорозі».</b> Кава, снеки, дрібниці на касі — по 50–150 грн щодня.</span></label></li>
+        <li><label><input type="checkbox"><span><b>Відсотки й комісії.</b> Кредитка, розстрочки, перекази, зняття готівки, обслуговування карток.</span></label></li>
+        <li><label><input type="checkbox"><span><b>Мобільний зв’язок та інтернет.</b> Тарифи, які давно можна замінити дешевшими.</span></label></li>
+        <li><label><input type="checkbox"><span><b>Дитячі «хочу» без ліміту.</b> Іграшки, солодощі, донати в іграх.</span></label></li>
+        <li><label><input type="checkbox"><span><b>Продукти, що псуються.</b> Великі закупи без меню — частина йде у смітник.</span></label></li>
+        <li><label><input type="checkbox"><span><b>Таксі замість планування.</b> Поїздки, яких можна уникнути, вийшовши на 10 хвилин раніше.</span></label></li>
+        <li><label><input type="checkbox"><span><b>Розпродажі.</b> «Вигідні» покупки речей, які не планували.</span></label></li>
+        <li><label><input type="checkbox"><span><b>Автоплатежі й страховки, що дублюються.</b> Перевірте, чи не платите двічі за одне й те саме.</span></label></li>
+      </ol>
+      <div class="doc-tip"><b>Що далі:</b> оберіть 2–3 пункти й домовтеся в сім’ї про ліміт на місяць. Знайдені гроші одразу переказуйте на окремий рахунок — це початок вашої «подушки».</div>
+    </div>
+    <div class="doc-actions"><button class="btn btn-gold" type="button" data-print>Зберегти PDF</button><a class="btn btn-line" href="#contact" data-close data-product="checkup">Розібрати на діагностиці</a></div>
+  </div>
+</div>
+
+<div class="modal" id="m-guide" role="dialog" aria-modal="true" aria-labelledby="gd-title" hidden>
+  <div class="modal-box doc">
+    <button class="modal-x" type="button" data-close aria-label="Закрити">×</button>
+    <div class="doc-body printable">
+      <div class="eyebrow">Подарунок · Ганна Верес</div>
+      <h2 id="gd-title">Подушка безпеки за 6 кроків</h2>
+      <p>«Подушка» — це гроші, які дають сім’ї час і спокій, якщо дохід зник, хтось захворів або сталося щось непередбачене.</p>
+      <ol class="guide">
+        <li><h3>Порахуйте обов’язкові витрати</h3><p>Житло, комуналка, їжа, транспорт, ліки, кредити, садок і школа. Без розваг і великих покупок. Це ваш «мінімальний місяць».</p></li>
+        <li><h3>Визначте розмір</h3><p>Стабільний дохід двох дорослих — 3 «мінімальні місяці». Один дохід, ФОП чи нестабільні заробітки — 6 місяців і більше.</p></li>
+        <li><h3>Почніть із маленької цілі</h3><p>Перша мета — 10&nbsp;000&nbsp;грн або один місяць витрат. Маленька перемога мотивує більше, ніж велика сума «колись».</p></li>
+        <li><h3>Автоматизуйте</h3><p>У день зарплати автоматично переказуйте 5–10% доходу на окремий рахунок. Спершу відкладайте, потім витрачайте.</p></li>
+        <li><h3>Оберіть, де зберігати</h3><p>Подушка має бути доступною за 1–3 дні й не падати в ціні: окремий накопичувальний рахунок, короткий депозит із можливістю зняття, частина — у валюті. Не тримайте її в ризикових інструментах.</p></li>
+        <li><h3>Домовтеся про правила</h3><p>Запишіть, що є «надзвичайною ситуацією», а що ні. Після використання — поповнюйте подушку в першу чергу.</p></li>
+      </ol>
+      <div class="doc-tip"><b>Якщо дохід нестабільний:</b> визначте «внутрішню зарплату» — суму, яку сім’я отримує щомісяця, — а все понад неї відкладайте в резерв у хороші місяці.</div>
+      <p class="tiny">Матеріал має освітній характер і не є індивідуальною фінансовою порадою.</p>
+    </div>
+    <div class="doc-actions"><button class="btn btn-gold" type="button" data-print>Зберегти PDF</button><a class="btn btn-line" href="#contact" data-close data-product="checkup">Порахувати на діагностиці</a></div>
+  </div>
+</div>
+
+<div class="modal" id="m-thanks" role="dialog" aria-modal="true" aria-labelledby="th-title" hidden>
+  <div class="modal-box small center">
+    <button class="modal-x" type="button" data-close aria-label="Закрити">×</button>
+    <div class="thanks-ico" aria-hidden="true">✓</div>
+    <h2 id="th-title">Дякую, заявку отримано!</h2>
+    <p>Я напишу вам протягом дня. А поки — заберіть подарунок: таблицю «Сімейний бюджет».</p>
+    <div class="btns center-b"><button class="btn btn-gold" type="button" data-dl-budget>Завантажити таблицю</button><button class="btn btn-line" type="button" data-close>Закрити</button></div>
+  </div>
+</div>
+
+<div class="modal" id="m-offer" role="dialog" aria-modal="true" aria-labelledby="of-title" hidden>
+  <div class="modal-box doc">
+    <button class="modal-x" type="button" data-close aria-label="Закрити">×</button>
+    <div class="doc-body">
+      <h2 id="of-title">Публічна оферта</h2>
+      <p><b>1. Сторони.</b> <span data-cfg="legal.fop">ФОП</span> (далі — Виконавець) пропонує будь-якій особі (далі — Клієнт) отримати консультаційні послуги на умовах цієї оферти.</p>
+      <p><b>2. Предмет.</b> Інформаційно-консультаційні послуги з особистого фінансового планування: консультації, складання фінансового плану, освітня програма. Послуги не є інвестиційними, банківськими чи страховими.</p>
+      <p><b>3. Вартість і оплата.</b> Вартість зазначена на сайті. Оплата — безготівково на рахунок Виконавця. Програма бронюється передоплатою 500 грн.</p>
+      <p><b>4. Перенесення.</b> Зустріч можна перенести безкоштовно, попередивши щонайменше за 24 години.</p>
+      <p><b>5. Повернення коштів.</b> Якщо Клієнт вважає діагностику некорисною, кошти повертаються протягом 7 днів після звернення. За програмою — повернення протягом перших 7 днів від старту.</p>
+      <p><b>6. Відповідальність.</b> Рішення щодо власних фінансів Клієнт приймає самостійно. Виконавець не гарантує конкретного фінансового результату.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="m-privacy" role="dialog" aria-modal="true" aria-labelledby="pr-title" hidden>
+  <div class="modal-box doc">
+    <button class="modal-x" type="button" data-close aria-label="Закрити">×</button>
+    <div class="doc-body">
+      <h2 id="pr-title">Політика конфіденційності</h2>
+      <p><b>Які дані збираємо:</b> ім’я, телефон, зручний месенджер, коментар, результати тесту чи калькулятора (якщо ви їх додали до заявки).</p>
+      <p><b>Навіщо:</b> щоб зв’язатися з вами щодо заявки й надати послугу.</p>
+      <p><b>Кому передаємо:</b> нікому, крім сервісів, необхідних для роботи сайту (хостинг, месенджер для отримання заявок).</p>
+      <p><b>Cookies:</b> аналітичні cookies (Google Analytics, Meta Pixel) вмикаються лише після вашої згоди.</p>
+      <p><b>Ваші права:</b> ви можете попросити змінити або видалити свої дані, написавши на <a data-href="mailto:contacts.email" data-text="contacts.email" href="#">email</a>.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
