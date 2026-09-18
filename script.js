@@ -199,63 +199,6 @@
     $('button', attach).onclick = function () { extras = {}; renderAttach(); };
   }
 
-  /* ---------- Калькулятор ---------- */
-  var cf = $('#calcForm');
-  if (cf) {
-    var cSum = $('#cSum'), cHave = $('#cHave'), cYears = $('#cYears'), cYearsOut = $('#cYearsOut');
-    var num = function (el) { return +(el.value || '').replace(/[^\d]/g, '') || 0; };
-    var lastCalc = null;
-    var yWord = function (n) { var a = n % 10, b = n % 100; return (a === 1 && b !== 11) ? 'рік' : (a >= 2 && a <= 4 && (b < 12 || b > 14)) ? 'роки' : 'років'; };
-    function calc(animate) {
-      var goal = $('input[name=goal]:checked', cf).value;
-      var target = num(cSum), have = num(cHave), years = +cYears.value;
-      var rate = +$('input[name=rate]:checked', cf).value / 100;
-      var n = years * 12, r = rate / 12;
-      var growHave = have * Math.pow(1 + r, n);
-      var need = Math.max(target - growHave, 0);
-      var pmt = r > 0 ? need * r / (Math.pow(1 + r, n) - 1) : need / n;
-      var noRate = Math.max(target - have, 0) / n;
-      var own = pmt * n + have;
-      var grow = Math.max(target - own, 0);
-      $('#cOut').textContent = fmt(pmt);
-      cYearsOut.textContent = years + ' ' + yWord(years);
-      cYears.style.setProperty('--p', ((years - 1) / 29 * 100) + '%');
-      $('#cNote').textContent = need === 0
-        ? 'Вашої суми вже вистачає на цю ціль. Час подумати про наступну!'
-        : (r > 0 ? 'Без відсотків знадобилося б ' + fmt(noRate) + ' грн на місяць.' : 'Якщо зберігати з доходом, внесок буде меншим — перемкніть спосіб зберігання.');
-      var tot = own + grow || 1;
-      $('#cOwn').textContent = fmt(own); $('#cGrow').textContent = fmt(grow);
-      $('#cBarOwn').style.width = (own / tot * 100) + '%';
-      $('#cBarGrow').style.width = (grow / tot * 100) + '%';
-      if (animate && !reduced) { var o = $('.calc-sum'); o.classList.remove('pulse'); void o.offsetWidth; o.classList.add('pulse'); }
-      lastCalc = goal + ': ' + fmt(target) + ' грн за ' + years + ' ' + yWord(years) + ' → ≈' + fmt(pmt) + ' грн/міс';
-    }
-    function fmtInput(el) {
-      var v = num(el);
-      el.value = v ? v.toLocaleString('uk-UA') : '0';
-    }
-    [cSum, cHave].forEach(function (el) {
-      el.addEventListener('input', function () { calc(false); });
-      el.addEventListener('blur', function () { fmtInput(el); });
-    });
-    cYears.addEventListener('input', function () { calc(false); });
-    $$('input[name=goal]', cf).forEach(function (r) {
-      r.addEventListener('change', function () {
-        cSum.value = (+r.getAttribute('data-sum')).toLocaleString('uk-UA');
-        cYears.value = r.getAttribute('data-years');
-        calc(true); track('calc_use', { goal: r.value });
-      });
-    });
-    $$('input[name=rate]', cf).forEach(function (r) { r.addEventListener('change', function () { calc(true); }); });
-    cf.addEventListener('submit', function (e) { e.preventDefault(); });
-    calc(false);
-    $('#calcToForm').addEventListener('click', function () {
-      extras.calc = 'Калькулятор — ' + lastCalc;
-      renderAttach();
-      goForm('checkup');
-    });
-  }
-
   /* ---------- Тест ---------- */
   var Q = [
     ['Чи знаєте ви, скільки сім’я витрачає за місяць?', ['Так, точно', 'Приблизно', 'Ні, гроші «розтікаються»']],

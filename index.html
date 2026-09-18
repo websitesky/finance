@@ -64,7 +64,6 @@
     <nav class="nav" id="nav" aria-label="Головне меню">
       <a href="#about">Про мене</a>
       <a href="#method">Метод</a>
-      <a href="#calc">Калькулятор</a>
       <div class="nav-dd">
         <button class="nav-dd-btn" type="button" aria-expanded="false" aria-controls="dd-services">Послуги<svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg></button>
         <div class="dd" id="dd-services">
@@ -277,50 +276,6 @@
       <cite>— Ганна Верес</cite>
     </blockquote>
     <div class="center reveal"><a class="btn btn-gold" href="#contact" data-track="cta_click" data-product="checkup">Почати з діагностики</a></div>
-  </div>
-</section>
-
-<!-- ===================== КАЛЬКУЛЯТОР ===================== -->
-<section class="sec" id="calc" aria-labelledby="calc-t">
-  <div class="wrap">
-    <div class="sh reveal">
-      <div class="eyebrow">Порахуйте самі</div>
-      <h2 id="calc-t">Скільки відкладати, <em class="mk">щоб мрія стала планом</em></h2>
-      <p>Оберіть ціль і подивіться, яку суму потрібно відкладати щомісяця.</p>
-    </div>
-    <div class="calc reveal">
-      <form class="calc-form card" id="calcForm" novalidate>
-        <fieldset class="goals">
-          <legend>Ціль</legend>
-          <label><input type="radio" name="goal" value="Навчання дитини" data-sum="300000" data-years="10" checked><span>🎓 Навчання дитини</span></label>
-          <label><input type="radio" name="goal" value="Подушка безпеки" data-sum="120000" data-years="2"><span>🛟 Подушка безпеки</span></label>
-          <label><input type="radio" name="goal" value="Житло" data-sum="1500000" data-years="10"><span>🏡 Житло</span></label>
-          <label><input type="radio" name="goal" value="Відпустка" data-sum="80000" data-years="1"><span>🌊 Відпустка</span></label>
-          <label><input type="radio" name="goal" value="Пенсійний капітал" data-sum="3000000" data-years="20"><span>🌿 Пенсійний капітал</span></label>
-          <label><input type="radio" name="goal" value="Своя ціль" data-sum="200000" data-years="5"><span>✦ Своя ціль</span></label>
-        </fieldset>
-        <div class="fields">
-          <label class="fld"><span>Потрібна сума, грн</span><input type="text" inputmode="numeric" id="cSum" value="300 000" autocomplete="off"></label>
-          <label class="fld"><span>Вже накопичено, грн</span><input type="text" inputmode="numeric" id="cHave" value="0" autocomplete="off"></label>
-        </div>
-        <label class="fld range"><span>Через скільки років: <b id="cYearsOut">10</b></span><input type="range" id="cYears" min="1" max="30" value="10"></label>
-        <fieldset class="seg">
-          <legend>Як зберігати</legend>
-          <label><input type="radio" name="rate" value="0"><span>Під подушкою<small>0%</small></span></label>
-          <label><input type="radio" name="rate" value="8" checked><span>Консервативно<small>≈8% річних</small></span></label>
-          <label><input type="radio" name="rate" value="12"><span>Помірно<small>≈12% річних</small></span></label>
-        </fieldset>
-      </form>
-      <div class="calc-res dark-card" aria-live="polite">
-        <small>Відкладайте щомісяця</small>
-        <div class="calc-sum"><span id="cOut">1 640</span>&nbsp;грн</div>
-        <p id="cNote" class="calc-note">Без відсотків знадобилося б 2 500 грн на місяць.</p>
-        <div class="calc-bar" aria-hidden="true"><i id="cBarOwn"></i><i id="cBarGrow"></i></div>
-        <div class="calc-legend"><span><i class="l1"></i>Ваші внески: <b id="cOwn">196 800</b> грн</span><span><i class="l2"></i>Дохід: <b id="cGrow">103 200</b> грн</span></div>
-        <button class="btn btn-gold" type="button" id="calcToForm" data-track="calc_to_form">Скласти реальний план на діагностиці</button>
-        <p class="tiny">Розрахунок орієнтовний і не враховує інфляцію та податки. Це не інвестиційна порада.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -693,7 +648,7 @@
         <a class="logo logo-light" href="#top"><span class="logo-mark" aria-hidden="true">ГВ</span><span class="logo-txt"><b>Ганна Верес</b><small>фінансова консультантка для сімей з дітьми</small></span></a>
       </div>
       <nav class="ftr-nav" aria-label="Меню у футері">
-        <a href="#about">Про мене</a><a href="#method">Метод</a><a href="#calc">Калькулятор</a><a href="#services">Послуги</a><a href="#program">Програма</a><a href="#gift">Подарунок</a><a href="#b2b">Для компаній</a><a href="#reviews">Відгуки</a><a href="#faq">Питання</a>
+        <a href="#about">Про мене</a><a href="#method">Метод</a><a href="#services">Послуги</a><a href="#program">Програма</a><a href="#gift">Подарунок</a><a href="#b2b">Для компаній</a><a href="#reviews">Відгуки</a><a href="#faq">Питання</a>
       </nav>
       <div class="ftr-contacts">
         <a data-href="contacts.telegram" href="#" target="_blank" rel="noopener">Telegram</a>
