@@ -148,10 +148,9 @@ mark{background:linear-gradient(transparent 55%,rgba(233,203,139,.7) 55%);color:
 .nav-dd.open .nav-dd-btn svg{transform:rotate(180deg)}
 .nav-dd-btn.active{color:var(--ch)}
 .dd{display:grid;gap:2px}
-.dd a{display:flex;align-items:flex-start;gap:12px;padding:11px 12px;border-radius:10px;text-decoration:none;white-space:normal}
+.dd a{display:block;padding:11px 12px;border-radius:10px;text-decoration:none;white-space:normal}
 .nav .dd a::after{display:none}
 .dd a:hover,.dd a:focus-visible{background:rgba(184,137,63,.12)}
-.dd-n{flex:none;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--ch);color:var(--gold-l);font-size:13px;font-weight:700;margin-top:1px}
 .dd b{display:block;font-size:15px;font-weight:600;color:var(--ch);line-height:1.3}
 .dd small{display:block;font-size:13px;color:var(--ink2);line-height:1.35;margin-top:2px}
 @media (min-width:1241px){
