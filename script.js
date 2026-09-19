@@ -130,7 +130,7 @@
   /* ---------- Метод: будинок росте разом зі скролом ---------- */
   var mb = $('.method-build');
   if (mb && 'IntersectionObserver' in window) {
-    var floors = $$('.floor', mb), band = $('.beam-band', mb), mSteps = $$('.step');
+    var floors = $$('.floor', mb), band = $$('.beam-band, .beam-bar', mb), mSteps = $$('.step');
     var bands = [[470, 44], [330, 140], [306, 36], [192, 126], [92, 100]];
     var setLevel = function (n) {
       floors.forEach(function (f) {
@@ -139,7 +139,7 @@
       });
       mSteps.forEach(function (st, i) { st.classList.toggle('on', i < n); });
       var b = bands[n - 1];
-      band.style.transform = 'translateY(' + b[0] + 'px) scaleY(' + (b[1] / 100) + ')';
+      band.forEach(function (el) { el.style.transform = 'translateY(' + b[0] + 'px) scaleY(' + (b[1] / 100) + ')'; });
     };
     setLevel(1);
     var stepObs = new IntersectionObserver(function (entries) {

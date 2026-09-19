@@ -67,7 +67,8 @@ b{font-weight:600}
 .mono,.stat b,.t-price b,.price b,.fmt-p,.timer b,.res-score{font-family:var(--mono)}
 
 /* акцент в заголовках: лінія землі, а не виділення */
-.mk{font-style:normal;text-decoration:underline;text-decoration-color:var(--ochre);text-decoration-thickness:.07em;text-underline-offset:.13em;text-decoration-skip-ink:none}
+.mk{font-style:normal}
+.hero-t .mk,#method-t .mk,#contact-t .mk{text-decoration:underline;text-decoration-color:var(--ochre);text-decoration-thickness:.07em;text-underline-offset:.13em;text-decoration-skip-ink:none}
 mark{background:none;color:inherit;font-weight:600;text-decoration:underline;text-decoration-color:var(--ochre);text-decoration-thickness:.12em;text-underline-offset:.16em;text-decoration-skip-ink:none}
 
 /* ---------- Кнопки: піґулка + диск зі стрілкою ---------- */
@@ -214,14 +215,17 @@ mark{background:none;color:inherit;font-weight:600;text-decoration:underline;tex
   .lead{font-size:1.0625rem}
 }
 
+/* ---------- Позначки рівнів на межах секцій ---------- */
+.sec[data-lvl]::before{content:attr(data-lvl);position:absolute;z-index:4;top:0;left:var(--gut);transform:translateY(-50%);padding:4px 11px;border-radius:999px;background:var(--paper);color:var(--ink2);font:500 .6875rem/1.2 var(--mono);letter-spacing:.02em;box-shadow:0 0 0 1px var(--hair2)}
+
 /* ---------- Цифри ---------- */
 .stats{padding:0}
-.stats-in{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--hair2);border-bottom:1px solid var(--hair2)}
-.stat{padding:clamp(28px,4vw,48px) clamp(16px,2.4vw,32px);position:relative}
-.stat + .stat{border-left:1px solid var(--hair)}
+.stats-in{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--graphite)}
+.stat{padding:clamp(34px,4.4vw,56px) clamp(16px,2.4vw,32px) clamp(30px,4vw,48px);position:relative}
+.stat::before{content:'';position:absolute;top:0;left:clamp(16px,2.4vw,32px);width:1px;height:16px;background:var(--graphite)}
 .stat b{display:block;font-size:clamp(2.2rem,4.4vw,3.75rem);font-weight:500;letter-spacing:-.045em;line-height:1;color:var(--graphite);font-variant-numeric:tabular-nums}
 .stat > span{display:block;margin-top:12px;font-size:.875rem;line-height:1.4;color:var(--ink2);max-width:22ch}
-@media (max-width:760px){.stats-in{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--hair)}}
+@media (max-width:760px){.stats-in{grid-template-columns:1fr 1fr}.stat:nth-child(n+3){border-top:1px solid var(--hair2)}}
 
 /* ---------- Болі ---------- */
 .pains{display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(32px,6vw,96px)}
@@ -265,8 +269,11 @@ mark{background:none;color:inherit;font-weight:600;text-decoration:underline;tex
 .cmp-col ul{list-style:none}
 .cmp-col li{padding:15px 0;border-top:1px solid var(--hair);font-size:1rem;line-height:1.45}
 .cmp-no{background:var(--ground2);color:var(--ink2)}
-.cmp-no h3{color:var(--ink2)}
-.cmp-no li{text-decoration:line-through;text-decoration-color:rgba(75,84,89,.4)}
+.cmp-no h3{color:#3A4247}
+.cmp-no li,.cmp-yes li{position:relative;padding-left:32px}
+.cmp-no{color:#3A4247}
+.cmp-no li::before,.cmp-yes li::before{content:'';position:absolute;left:0;top:17px;width:18px;height:18px;background:currentColor;opacity:.6;-webkit-mask:var(--icon-x) center/14px no-repeat;mask:var(--icon-x) center/14px no-repeat}
+.cmp-yes li::before{opacity:1;background:var(--ochre);-webkit-mask-image:var(--icon-check);mask-image:var(--icon-check)}
 .cmp-yes{background:var(--spruce);color:var(--on-dark)}
 .cmp-yes h3{color:var(--on-dark)}
 .cmp-yes .cmp-ic{color:var(--ochre)}
@@ -303,7 +310,8 @@ mark{background:none;color:inherit;font-weight:600;text-decoration:underline;tex
 .method-build [fill="#F7F8F5"]{fill:var(--spruce3)}
 .floor{opacity:.1;transform:translateY(22px);transition:opacity .9s var(--ease),transform 1s var(--ease)}
 .floor.on{opacity:1;transform:none}
-.beam-band{fill:rgba(230,168,46,.26);transform-origin:0 0;transition:transform 1s var(--ease)}
+.beam-band{fill:rgba(230,168,46,.09);transform-origin:0 0;transition:transform 1s var(--ease)}
+.beam-bar{fill:var(--ochre);transform-origin:0 0;transition:transform 1s var(--ease)}
 .steps{list-style:none}
 .step{min-height:44vh;display:flex;flex-direction:column;justify-content:center;padding:28px 0 28px 72px;position:relative;opacity:.32;transition:opacity .8s var(--ease)}
 .step::before{content:'';position:absolute;left:0;top:50%;width:44px;height:44px;margin-top:-22px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--hair-dark);transition:background-color .6s var(--ease),box-shadow .6s var(--ease)}
@@ -324,7 +332,7 @@ mark{background:none;color:inherit;font-weight:600;text-decoration:underline;tex
 }
 
 /* ---------- Формати ---------- */
-.formats{display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(5,auto);gap:26px}
+.formats{display:grid;grid-template-columns:1fr 1.5fr 1fr 1fr 1fr;grid-template-rows:repeat(5,auto);gap:26px}
 .fmt{display:grid;grid-template-rows:subgrid;grid-row:span 5;row-gap:10px;padding:26px 22px 24px;text-decoration:none}
 .fmt small{font-size:.78125rem;color:var(--ochre-deep);font-weight:600;line-height:1.35}
 .fmt h3{font-size:1.3rem}
@@ -336,6 +344,7 @@ mark{background:none;color:inherit;font-weight:600;text-decoration:underline;tex
 .fmt:hover .fmt-l::after{transform:translate(2px,-1px)}
 .fmt-hot{background:var(--spruce);color:var(--on-dark)}
 .fmt-hot h3,.fmt-hot .fmt-p{color:var(--on-dark)}
+.fmt-hot h3{font-size:1.65rem}
 .fmt-hot p,.fmt-hot .fmt-p s{color:var(--on-dark2)}
 .fmt-hot small,.fmt-hot .fmt-l{color:var(--ochre)}
 @media (max-width:1180px){.formats{grid-template-columns:repeat(3,1fr);grid-template-rows:none}.fmt{grid-row:span 5}}
@@ -348,7 +357,7 @@ mark{background:none;color:inherit;font-weight:600;text-decoration:underline;tex
 .stage{display:flex;align-items:flex-start;gap:20px;margin:16px 0 28px;padding-bottom:20px;border-bottom:1px solid var(--hair2)}
 .stage + .checkup{margin-bottom:72px}
 .stage-n{flex:none;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--graphite);color:var(--ochre);font:500 1.1rem/1 var(--mono)}
-.stage small{display:block;font:500 .75rem/1 var(--mono);letter-spacing:.04em;color:var(--ochre-deep);margin-bottom:8px}
+.stage small{display:block;font:500 .8125rem/1.3 var(--mono);color:var(--ochre-deep);margin:0 0 8px}
 .stage h3{font-size:clamp(1.6rem,2.6vw,2.2rem);margin-bottom:6px}
 .stage p{margin:0;color:var(--ink2);max-width:62ch}
 #plans + .tariffs{margin-top:44px}
