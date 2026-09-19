@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ганна Верес — фінансова консультантка для сімей з дітьми</title>
 <meta name="description" content="Допомагаю сім’ям із дітьми навести лад у бюджеті, зібрати «подушку» й накопичувати на майбутнє дітей — без жорсткої економії. Фінансова діагностика сім’ї онлайн за 600 грн.">
-<meta name="theme-color" content="#4A1421">
+<meta name="theme-color" content="#17332C">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="uk_UA">
 <meta property="og:title" content="Ганна Верес — фінансова консультантка для сімей з дітьми">
@@ -14,8 +14,8 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/hero-1920.webp" imagesrcset="assets/hero-1200.webp 1200w, assets/hero-1920.webp 1920w" imagesizes="100vw" type="image/webp">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Prata&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero-1200.jpg" type="image/jpeg">
 <link rel="stylesheet" href="styles.css">
 <script src="config.js"></script>
 <script type="application/ld+json">
@@ -79,7 +79,7 @@
       <a class="btn btn-gold nav-cta" href="#contact" data-track="cta_click" data-product="checkup">Записатися на діагностику −50%</a>
     </nav>
     <a class="btn btn-gold btn-sm hdr-cta" href="#contact" data-track="cta_click" data-product="checkup">Записатися</a>
-    <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+    <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
   </div>
 </header>
 
@@ -87,15 +87,8 @@
 
 <!-- ===================== ПЕРШИЙ ЕКРАН ===================== -->
 <section class="hero" aria-labelledby="hero-title">
-  <div class="hero-ph">
-    <picture>
-      <source type="image/webp" srcset="assets/hero-1200.webp 1200w, assets/hero-1920.webp 1920w" sizes="100vw">
-      <img src="assets/hero-1920.jpg" srcset="assets/hero-1200.jpg 1200w, assets/hero-1920.jpg 1920w" sizes="100vw" alt="Фінансова консультантка Ганна Верес у своєму кабінеті" width="1920" height="1072" fetchpriority="high">
-    </picture>
-  </div>
-  <div class="wrap hero-in">
-    <div class="hero-card glass">
-      <div class="eyebrow">Фінансова консультантка<i>✦</i>онлайн<i>✦</i>для сімей з дітьми</div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
       <h1 id="hero-title" class="hero-t">Гроші в сім’ї, які дають <em class="mk">спокій, а&nbsp;не&nbsp;сварки</em></h1>
       <p class="lead">Допоможу навести лад у бюджеті, зібрати «подушку» й почати відкладати на майбутнє дітей — без жорсткої економії та відмови від маленьких радощів.</p>
       <div class="btns">
@@ -108,11 +101,57 @@
         <li>План під ваш дохід</li>
       </ul>
     </div>
+    <figure class="hero-fig">
+      <svg class="house" viewBox="0 0 700 700" role="img" aria-label="Будинок у розрізі: у нижній кімнаті — Ганна Верес, фінансова консультантка. Рівні будинку підписані кроками методу: Ясність, Домовленість, Захист, Цілі, Капітал.">
+        <defs>
+          <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#1E2326" stroke-width="1"/></pattern>
+          <linearGradient id="beam" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#E6A82E" stop-opacity=".55"/><stop offset="1" stop-color="#E6A82E" stop-opacity=".04"/></linearGradient>
+        </defs>
+        <rect x="0" y="590" width="700" height="110" fill="url(#hatch)" opacity=".22"/>
+        <polygon points="120,164 320,66 520,164" fill="#F7F8F5"/>
+        <rect class="poche" x="440" y="76" width="22" height="70"/>
+        <rect x="114" y="170" width="412" height="148" fill="#F7F8F5"/>
+        <polygon class="beam" points="526,206 526,290 330,318 190,318" fill="url(#beam)"/>
+        <image class="photo" href="assets/hero-1200.jpg" x="114" y="330" width="412" height="260" preserveAspectRatio="xMaxYMid slice"/>
+        <g class="ln" fill="none">
+          <circle cx="320" cy="124" r="20"/><path d="M300 124h40M320 104v40"/>
+          <path d="M230 172V212"/><path d="M212 228a18 18 0 0 1 36 0z"/>
+          <path d="M160 318V290M160 304H182M300 318V290M300 304H278M172 292H290M182 292V318M282 292V318"/>
+          <path d="M114 236H164M114 236V226M124 236V222M134 236V228"/>
+          <path d="M526 206h14M526 290h14M533 206V290"/>
+        </g>
+        <rect class="poche" x="92" y="318" width="456" height="12"/>
+        <rect class="poche" x="100" y="164" width="440" height="8"/>
+        <rect class="poche" x="100" y="172" width="14" height="146"/>
+        <rect class="poche" x="526" y="172" width="14" height="34"/>
+        <rect class="poche" x="526" y="290" width="14" height="28"/>
+        <rect class="poche" x="100" y="330" width="14" height="260"/>
+        <rect class="poche" x="526" y="330" width="14" height="260"/>
+        <path class="roof" d="M84 172L320 52L556 172" fill="none"/>
+        <rect class="poche" x="100" y="590" width="440" height="34"/>
+        <rect class="poche" x="82" y="624" width="476" height="20"/>
+        <path class="ln" d="M0 590H700" fill="none" stroke-width="1.6"/>
+        <circle class="sun" cx="646" cy="198" r="15"/>
+        <g class="ln dim" fill="none">
+          <path d="M64 170V644"/>
+          <path d="M20 170H92M20 330H92M20 590H92M20 644H92"/>
+        </g>
+        <g class="mono">
+          <text x="20" y="162">+6,20</text><text x="20" y="322">+3,10</text><text x="20" y="582">±0,00</text><text x="20" y="636">−1,20</text>
+        </g>
+        <g class="ln" fill="none"><path d="M548 112H578M548 245H578M548 324H578M548 460H578M548 607H578"/></g>
+        <g class="dots"><circle cx="548" cy="112" r="3"/><circle cx="548" cy="245" r="3"/><circle cx="548" cy="324" r="3"/><circle cx="548" cy="460" r="3"/><circle cx="548" cy="607" r="3"/></g>
+        <g class="mono lab">
+          <text x="586" y="116">Капітал</text><text x="586" y="249">Цілі</text><text x="586" y="328">Захист</text><text x="586" y="464">Домовленість</text><text x="586" y="611">Ясність</text>
+        </g>
+      </svg>
+      <figcaption>Ганна Верес — фінансова консультантка для сімей з дітьми, онлайн</figcaption>
+    </figure>
   </div>
 </section>
 
 <!-- ===================== ЦИФРИ ===================== -->
-<section class="stats dark" aria-label="Цифри досвіду">
+<section class="stats" aria-label="Цифри досвіду">
   <div class="wrap stats-in">
     <div class="stat reveal"><b><span data-count="16">16</span></b><span>років у фінансах</span></div>
     <div class="stat reveal"><b><span data-count="600">600</span>+</b><span>сімей навели лад у грошах</span></div>
@@ -125,17 +164,16 @@
 <section class="sec" id="pains" aria-labelledby="pains-t">
   <div class="wrap">
     <div class="sh reveal">
-      <div class="eyebrow">Знайомо?</div>
       <h2 id="pains-t">Впізнаєте <em class="mk">свою сім’ю</em>?</h2>
       <p>Так звучать перші повідомлення, які мені пишуть.</p>
     </div>
     <div class="pains">
-      <div class="pain card reveal"><span class="pn">01</span><p>«Заробляємо нормально, а до зарплати знову нуль. І незрозуміло, куди все поділося».</p></div>
-      <div class="pain card reveal"><span class="pn">02</span><p>«Кожна розмова про гроші закінчується сваркою».</p></div>
-      <div class="pain card reveal"><span class="pn">03</span><p>«Кредитка стала другою зарплатою».</p></div>
-      <div class="pain card reveal"><span class="pn">04</span><p>«Накопичень немає. Якщо хтось захворіє чи зламається машина — паніка».</p></div>
-      <div class="pain card reveal"><span class="pn">05</span><p>«Хочемо відкладати на навчання дитини, але все „з наступного місяця“».</p></div>
-      <div class="pain card reveal"><span class="pn">06</span><p>«Боїмося, що гроші знеціняться, не знаємо, де їх зберігати. А про пенсію думати страшно».</p></div>
+      <div class="pain reveal"><p>«Заробляємо нормально, а до зарплати знову нуль. І незрозуміло, куди все поділося».</p></div>
+      <div class="pain reveal"><p>«Кожна розмова про гроші закінчується сваркою».</p></div>
+      <div class="pain reveal"><p>«Кредитка стала другою зарплатою».</p></div>
+      <div class="pain reveal"><p>«Накопичень немає. Якщо хтось захворіє чи зламається машина — паніка».</p></div>
+      <div class="pain reveal"><p>«Хочемо відкладати на навчання дитини, але все „з наступного місяця“».</p></div>
+      <div class="pain reveal"><p>«Боїмося, що гроші знеціняться, не знаємо, де їх зберігати. А про пенсію думати страшно».</p></div>
     </div>
     <div class="conclusion reveal">
       <p>Це не про «погане вміння рахувати». У більшості сімей просто немає <b>системи</b> — спільних правил, резерву й плану. І це виправляється за кілька тижнів.</p>
@@ -148,25 +186,24 @@
 <section class="sec sec-tint" id="for" aria-labelledby="for-t">
   <div class="wrap">
     <div class="sh reveal">
-      <div class="eyebrow">Для кого</div>
       <h2 id="for-t">Допомагаю сім’ям <em class="mk">на різних етапах</em></h2>
       <p>Цілі в кожної сім’ї свої, але починаємо завжди з ясності.</p>
     </div>
     <div class="grid3 sub4">
       <article class="who card reveal">
-        <div class="who-h"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span><h3>«Гроші є, але кудись зникають»</h3></div>
+        <div class="who-h"><h3>«Гроші є, але кудись зникають»</h3></div>
         <p class="who-s">Молоді сім’ї з малюками</p>
         <ul class="dots"><li>живете від зарплати до зарплати;</li><li>витрачаєте «на кредитці»;</li><li>сваритеся через покупки;</li><li>немає жодного резерву.</li></ul>
         <div class="result"><small>Результат</small>Зрозумілий бюджет і «подушка» на 3 місяці за пів року</div>
       </article>
       <article class="who card reveal">
-        <div class="who-h"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 9L12 4 2 9l10 5 10-5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg></span><h3>«Хочу, щоб у дитини був старт»</h3></div>
+        <div class="who-h"><h3>«Хочу, щоб у дитини був старт»</h3></div>
         <p class="who-s">Батьки школярів</p>
         <ul class="dots"><li>хочете відкладати на навчання, але не виходить;</li><li>не знаєте, скільки саме потрібно;</li><li>боїтеся, що гроші «з’їсть» інфляція;</li><li>витрати на дітей ростуть щороку.</li></ul>
         <div class="result"><small>Результат</small>Сума й щомісячний внесок на кожну ціль дитини</div>
       </article>
       <article class="who card reveal">
-        <div class="who-h"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>«А що буде з нами?»</h3></div>
+        <div class="who-h"><h3>«А що буде з нами?»</h3></div>
         <p class="who-s">Батьки 40+</p>
         <ul class="dots"><li>на державну пенсію не розраховуєте;</li><li>усе йде на дітей, «на себе — потім»;</li><li>сім’я без страхового захисту;</li><li>вже обпеклися на «вигідних інвестиціях».</li></ul>
         <div class="result"><small>Результат</small>План пенсійного капіталу й захист сім’ї</div>
@@ -179,12 +216,11 @@
 <section class="sec" id="compare" aria-labelledby="cmp-t">
   <div class="wrap">
     <div class="sh reveal">
-      <div class="eyebrow">Підхід</div>
       <h2 id="cmp-t">Не «менше витрачайте», <em class="mk">а система</em></h2>
     </div>
     <div class="cmp reveal">
       <div class="cmp-col cmp-no">
-        <h3><span aria-hidden="true">✕</span> Що зазвичай радять</h3>
+        <h3><span class="cmp-ic cmp-ic-no" aria-hidden="true"></span>Що зазвичай радять</h3>
         <ul>
           <li>Відмовтеся від кави й таксі</li>
           <li>Записуйте кожну гривню все життя</li>
@@ -195,7 +231,7 @@
         </ul>
       </div>
       <div class="cmp-col cmp-yes">
-        <h3><span aria-hidden="true">✓</span> Як працюю я</h3>
+        <h3><span class="cmp-ic cmp-ic-yes" aria-hidden="true"></span>Як працюю я</h3>
         <ul>
           <li>Залишаємо те, що робить життя приємним, і знаходимо реальні «діри»</li>
           <li>Облік лише 2 місяці, далі — прості ліміти</li>
@@ -214,7 +250,6 @@
 <section class="sec sec-tint" id="about" aria-labelledby="about-t">
   <div class="wrap">
     <div class="sh reveal">
-      <div class="eyebrow">Про мене</div>
       <h2 id="about-t">Я знаю, як це&nbsp;— <em class="mk">рахувати чужі гроші й губити свої</em></h2>
     </div>
     <div class="about">
@@ -252,7 +287,7 @@
         <p class="sign">Ганна Верес</p>
       </div>
     </div>
-    <a class="bridge reveal" href="#method">Саме з цього досвіду виріс мій метод «Сімейний фундамент» <span aria-hidden="true">→</span></a>
+    <a class="bridge reveal" href="#method">Саме з цього досвіду виріс мій метод «Сімейний фундамент»</a>
   </div>
 </section>
 
@@ -260,17 +295,31 @@
 <section class="sec dark" id="method" aria-labelledby="method-t">
   <div class="wrap">
     <div class="sh reveal">
-      <div class="eyebrow">Авторський метод</div>
       <h2 id="method-t">«Сімейний фундамент»&nbsp;— <em class="mk">5&nbsp;кроків до спокою в грошах</em></h2>
       <p>Будуємо, як дім: спершу фундамент, потім стіни й дах.</p>
     </div>
-    <ol class="steps">
-      <li class="step reveal"><span class="sn">1</span><h3>Ясність</h3><p>Бачимо, куди насправді йдуть гроші. Простий облік на 2 місяці без щоденних таблиць.</p></li>
-      <li class="step reveal"><span class="sn">2</span><h3>Домовленість</h3><p>Сімейна «фінансова рада»: спільні правила, особисті гроші кожного, жодних докорів.</p></li>
-      <li class="step reveal"><span class="sn">3</span><h3>Захист</h3><p>«Подушка» на 3–6 місяців, страхування й порядок у документах.</p></li>
-      <li class="step reveal"><span class="sn">4</span><h3>Цілі</h3><p>Рахуємо, скільки відкладати на навчання дітей, житло, відпустку.</p></li>
-      <li class="step reveal"><span class="sn">5</span><h3>Капітал</h3><p>Довгі накопичення й пенсія — зрозумілими інструментами, без ризикованих експериментів.</p></li>
-    </ol>
+    <div class="method">
+      <div class="method-build" aria-hidden="true">
+        <svg viewBox="0 0 460 540">
+          <defs><pattern id="hatch2" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#EAF0EA" stroke-width="1"/></pattern></defs>
+          <rect x="0" y="470" width="460" height="70" fill="url(#hatch2)" opacity=".16"/>
+          <rect class="beam-band" x="30" y="0" width="400" height="100"/>
+          <g class="floor f5"><polygon points="98,184 230,100 362,184" fill="#F7F8F5"/><rect class="poche" x="300" y="96" width="20" height="56"/><rect class="poche" x="82" y="184" width="296" height="8"/><path class="roof" d="M70 196L230 92L390 196" fill="none"/></g>
+          <g class="floor f4"><rect x="96" y="192" width="268" height="126" fill="#F7F8F5"/><g class="ln" fill="none"><rect x="120" y="222" width="56" height="60"/><path d="M148 222V282M120 252H176"/><rect x="202" y="222" width="56" height="60"/><path d="M230 222V282M202 252H258"/><rect x="284" y="222" width="56" height="60"/><path d="M312 222V282M284 252H340"/></g><rect class="poche" x="82" y="192" width="14" height="126"/><rect class="poche" x="364" y="192" width="14" height="126"/></g>
+          <g class="floor f3"><rect class="poche" x="72" y="318" width="316" height="12"/></g>
+          <g class="floor f2"><rect x="96" y="330" width="268" height="140" fill="#F7F8F5"/><g class="ln" fill="none"><path d="M204 470V398H256V470M230 398V470"/><rect x="120" y="374" width="50" height="46"/><rect x="290" y="374" width="50" height="46"/></g><rect class="poche" x="82" y="330" width="14" height="140"/><rect class="poche" x="364" y="330" width="14" height="140"/></g>
+          <g class="floor f1"><rect class="poche" x="70" y="470" width="320" height="28"/><rect class="poche" x="52" y="498" width="356" height="16"/></g>
+          <path class="ln" d="M0 470H460" fill="none" stroke-width="1.6"/>
+        </svg>
+      </div>
+      <ol class="steps">
+        <li class="step"><h3>Ясність</h3><p>Бачимо, куди насправді йдуть гроші. Простий облік на 2 місяці без щоденних таблиць.</p></li>
+        <li class="step"><h3>Домовленість</h3><p>Сімейна «фінансова рада»: спільні правила, особисті гроші кожного, жодних докорів.</p></li>
+        <li class="step"><h3>Захист</h3><p>«Подушка» на 3–6 місяців, страхування й порядок у документах.</p></li>
+        <li class="step"><h3>Цілі</h3><p>Рахуємо, скільки відкладати на навчання дітей, житло, відпустку.</p></li>
+        <li class="step"><h3>Капітал</h3><p>Довгі накопичення й пенсія — зрозумілими інструментами, без ризикованих експериментів.</p></li>
+      </ol>
+    </div>
     <blockquote class="quote reveal">
       <p>«Спокій у грошах дає не велика зарплата, а система, яку сім’я тримає разом»</p>
       <cite>— Ганна Верес</cite>
@@ -283,15 +332,14 @@
 <section class="sec sec-tint" id="formats" aria-labelledby="formats-t">
   <div class="wrap">
     <div class="sh reveal">
-      <div class="eyebrow">Формати</div>
       <h2 id="formats-t">Оберіть, <em class="mk">з чого почати</em></h2>
     </div>
     <div class="formats">
-      <a class="fmt card reveal" href="#gift"><small>Спробувати самостійно</small><h3>Подарунок</h3><p>Таблиця бюджету, чекліст і гайд про подушку безпеки</p><b class="fmt-p">Подарунок</b><span class="fmt-l">Забрати подарунок →</span></a>
-      <a class="fmt card fmt-hot reveal" href="#services"><small>Зрозуміти, з чого почати</small><h3>Фінансова діагностика сім’ї</h3><p>90 хвилин онлайн: розбір ситуації й перші кроки</p><b class="fmt-p"><s>1&nbsp;200</s> 600&nbsp;грн</b><span class="fmt-l">Записатися →</span></a>
-      <a class="fmt card reveal" href="#plans"><small>Персональний план і підтримка</small><h3>Фінансовий план сім’ї</h3><p>Від однієї зустрічі до супроводу на 2 місяці</p><b class="fmt-p">від 1&nbsp;900&nbsp;грн</b><span class="fmt-l">Обрати тариф →</span></a>
-      <a class="fmt card reveal" href="#program"><small>У групі, з домашніми завданнями</small><h3>Програма «Сімейний капітал»</h3><p>6 тижнів від хаосу в грошах до плану накопичень</p><b class="fmt-p">від 2&nbsp;900&nbsp;грн</b><span class="fmt-l">Про програму →</span></a>
-      <a class="fmt card reveal" href="#b2b"><small>Для HR і керівників</small><h3>Для компаній</h3><p>Лекції й воркшопи з фінансової грамотності</p><b class="fmt-p">від 8&nbsp;000&nbsp;грн</b><span class="fmt-l">Дізнатися більше →</span></a>
+      <a class="fmt card reveal" href="#gift"><small>Спробувати самостійно</small><h3>Подарунок</h3><p>Таблиця бюджету, чекліст і гайд про подушку безпеки</p><b class="fmt-p">Подарунок</b><span class="fmt-l">Забрати подарунок</span></a>
+      <a class="fmt card fmt-hot reveal" href="#services"><small>Зрозуміти, з чого почати</small><h3>Фінансова діагностика сім’ї</h3><p>90 хвилин онлайн: розбір ситуації й перші кроки</p><b class="fmt-p"><s>1&nbsp;200</s> 600&nbsp;грн</b><span class="fmt-l">Записатися</span></a>
+      <a class="fmt card reveal" href="#plans"><small>Персональний план і підтримка</small><h3>Фінансовий план сім’ї</h3><p>Від однієї зустрічі до супроводу на 2 місяці</p><b class="fmt-p">від 1&nbsp;900&nbsp;грн</b><span class="fmt-l">Обрати тариф</span></a>
+      <a class="fmt card reveal" href="#program"><small>У групі, з домашніми завданнями</small><h3>Програма «Сімейний капітал»</h3><p>6 тижнів від хаосу в грошах до плану накопичень</p><b class="fmt-p">від 2&nbsp;900&nbsp;грн</b><span class="fmt-l">Про програму</span></a>
+      <a class="fmt card reveal" href="#b2b"><small>Для HR і керівників</small><h3>Для компаній</h3><p>Лекції й воркшопи з фінансової грамотності</p><b class="fmt-p">від 8&nbsp;000&nbsp;грн</b><span class="fmt-l">Дізнатися більше</span></a>
     </div>
   </div>
 </section>
@@ -300,7 +348,6 @@
 <section class="sec" id="services" aria-labelledby="services-t">
   <div class="wrap">
     <div class="sh reveal">
-      <div class="eyebrow">Послуги</div>
       <h2 id="services-t">Особиста робота <em class="mk">з вашою сім’єю</em></h2>
       <p>Два кроки: спершу діагностика, потім (за бажанням) персональний фінансовий план. Онлайн (Zoom / Google Meet) · українська мова · можна вдвох із партнером.</p>
     </div>
@@ -354,7 +401,6 @@
 <section class="sec dark" id="program" aria-labelledby="program-t">
   <div class="wrap">
     <div class="sh reveal">
-      <div class="eyebrow">Групова програма</div>
       <h2 id="program-t">«Сімейний капітал»&nbsp;— <em class="mk">6&nbsp;тижнів до фінансового спокою</em></h2>
       <p>Покрокова програма для пар і батьків: від хаосу в грошах — до бюджету, резерву й плану накопичень.</p>
     </div>
@@ -431,7 +477,6 @@
   <div class="wrap">
     <div class="sh reveal">
       <div class="gift-big" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8"/><path d="M12 8C10.5 4.5 7 4 6.5 6S9 8 12 8zM12 8c1.5-3.5 5-4 5.5-2S15 8 12 8z"/></svg></div>
-      <div class="eyebrow">Подарунок для кожного</div>
       <h2 id="gift-t">Заберіть подарунок&nbsp;— <em class="mk">почніть уже сьогодні</em></h2>
       <p>Три матеріали, з яких я починаю роботу з кожною сім’єю. Без оплати й реєстрації — просто відкрийте або завантажте.</p>
     </div>
@@ -464,7 +509,6 @@
   <div class="wrap">
     <div class="b2b reveal">
       <div class="b2b-l">
-        <div class="eyebrow">Для компаній</div>
         <h2 id="b2b-t">Фінансова грамотність&nbsp;— <em class="mk">турбота про команду</em></h2>
         <p>Фінансовий стрес забирає фокус і енергію. Допоможу вашим працівникам навести лад у грошах.</p>
         <p class="muted">Для HR і компаній від 20 працівників: ІТ, виробництва, медичні заклади.</p>
@@ -484,7 +528,6 @@
 <section class="sec" id="cases" aria-labelledby="cases-t">
   <div class="wrap">
     <div class="sh reveal">
-      <div class="eyebrow">Історії</div>
       <h2 id="cases-t">Як змінюється <em class="mk">життя сімей</em></h2>
     </div>
     <div class="grid3 sub3">
@@ -512,16 +555,15 @@
 <section class="sec sec-tint" id="reviews" aria-labelledby="reviews-t">
   <div class="wrap">
     <div class="sh reveal">
-      <div class="eyebrow">Відгуки</div>
       <h2 id="reviews-t">Що кажуть <em class="mk">сім’ї</em></h2>
     </div>
     <div class="grid3 sub3 reviews">
-      <article class="rev card reveal"><h3>«Перестали сваритися через гроші»</h3><div><div class="stars" aria-label="5 з 5">★★★★★</div><p>«Думала, проблема в тому, що чоловік багато витрачає. На діагностиці з’ясувалося, що ми обоє просто не знали, скільки в нас насправді йде на їжу й доставку. <mark>Тепер раз на тиждень 15 хвилин — і жодних сварок.</mark>»</p></div><footer><b>Юлія, Київ</b><span class="ptag">Фінансова діагностика сім’ї</span></footer></article>
-      <article class="rev card reveal"><h3>«Закрили кредитку за 4 місяці»</h3><div><div class="stars" aria-label="5 з 5">★★★★★</div><p>«<mark>Уперше за три роки ми живемо без кредитки.</mark> Ганна не забороняла нам нічого, просто показала, де гроші „витікали“.»</p></div><footer><b>Андрій, Львів</b><span class="ptag">«План»</span></footer></article>
-      <article class="rev card reveal"><h3>«Нарешті відкладаємо на навчання доньки»</h3><div><div class="stars" aria-label="5 з 5">★★★★★</div><p>«Ми роками говорили „треба відкладати“. <mark>Тепер у нас є сума, термін і щомісячний внесок.</mark> Звучить просто, але самі ми до цього не дійшли.»</p></div><footer><b>Наталія, Дніпро</b><span class="ptag">«Сімейний капітал»</span></footer></article>
-      <article class="rev card reveal"><h3>«Без тиску й продажів»</h3><div><div class="stars" aria-label="5 з 5">★★★★★</div><p>«Боялася, що мені продаватимуть страховку. <mark>Ганна жодного разу нічого не нав’язала</mark>, лише пояснила варіанти й порахувала.»</p></div><footer><b>Оксана, Варшава</b><span class="ptag">«Супровід»</span></footer></article>
-      <article class="rev card reveal"><h3>«Моя власна подушка»</h3><div><div class="stars" aria-label="5 з 5">★★★★★</div><p>«У декреті я почувалася залежною. <mark>Тепер у мене свої накопичення, і це про гідність, а не про гроші.</mark>»</p></div><footer><b>Ірина, Київ</b><span class="ptag">«Сімейний капітал»</span></footer></article>
-      <article class="rev card reveal"><h3>«Корисно для всієї команди»</h3><div><div class="stars" aria-label="5 з 5">★★★★★</div><p>«Після воркшопу люди ще тиждень обговорювали свої бюджети в чаті. <mark>Найкращий відгук на внутрішнє навчання за рік.</mark>»</p></div><footer><b>Марина, HR-менеджерка ІТ-компанії</b><span class="ptag">Для компаній</span></footer></article>
+      <article class="rev card reveal"><h3>«Перестали сваритися через гроші»</h3><div><div class="stars" role="img" aria-label="5 з 5"></div><p>«Думала, проблема в тому, що чоловік багато витрачає. На діагностиці з’ясувалося, що ми обоє просто не знали, скільки в нас насправді йде на їжу й доставку. <mark>Тепер раз на тиждень 15 хвилин — і жодних сварок.</mark>»</p></div><footer><b>Юлія, Київ</b><span class="ptag">Фінансова діагностика сім’ї</span></footer></article>
+      <article class="rev card reveal"><h3>«Закрили кредитку за 4 місяці»</h3><div><div class="stars" role="img" aria-label="5 з 5"></div><p>«<mark>Уперше за три роки ми живемо без кредитки.</mark> Ганна не забороняла нам нічого, просто показала, де гроші „витікали“.»</p></div><footer><b>Андрій, Львів</b><span class="ptag">«План»</span></footer></article>
+      <article class="rev card reveal"><h3>«Нарешті відкладаємо на навчання доньки»</h3><div><div class="stars" role="img" aria-label="5 з 5"></div><p>«Ми роками говорили „треба відкладати“. <mark>Тепер у нас є сума, термін і щомісячний внесок.</mark> Звучить просто, але самі ми до цього не дійшли.»</p></div><footer><b>Наталія, Дніпро</b><span class="ptag">«Сімейний капітал»</span></footer></article>
+      <article class="rev card reveal"><h3>«Без тиску й продажів»</h3><div><div class="stars" role="img" aria-label="5 з 5"></div><p>«Боялася, що мені продаватимуть страховку. <mark>Ганна жодного разу нічого не нав’язала</mark>, лише пояснила варіанти й порахувала.»</p></div><footer><b>Оксана, Варшава</b><span class="ptag">«Супровід»</span></footer></article>
+      <article class="rev card reveal"><h3>«Моя власна подушка»</h3><div><div class="stars" role="img" aria-label="5 з 5"></div><p>«У декреті я почувалася залежною. <mark>Тепер у мене свої накопичення, і це про гідність, а не про гроші.</mark>»</p></div><footer><b>Ірина, Київ</b><span class="ptag">«Сімейний капітал»</span></footer></article>
+      <article class="rev card reveal"><h3>«Корисно для всієї команди»</h3><div><div class="stars" role="img" aria-label="5 з 5"></div><p>«Після воркшопу люди ще тиждень обговорювали свої бюджети в чаті. <mark>Найкращий відгук на внутрішнє навчання за рік.</mark>»</p></div><footer><b>Марина, HR-менеджерка ІТ-компанії</b><span class="ptag">Для компаній</span></footer></article>
     </div>
   </div>
 </section>
@@ -530,7 +572,6 @@
 <section class="sec" id="start" aria-labelledby="start-t">
   <div class="wrap">
     <div class="sh reveal">
-      <div class="eyebrow">Як почати</div>
       <h2 id="start-t">Від заявки до плану&nbsp;— <em class="mk">4&nbsp;кроки</em></h2>
     </div>
     <ol class="how">
@@ -547,7 +588,6 @@
 <section class="sec sec-tint" id="faq" aria-labelledby="faq-t">
   <div class="wrap narrow">
     <div class="sh reveal">
-      <div class="eyebrow">Питання</div>
       <h2 id="faq-t">Часті <em class="mk">питання</em></h2>
     </div>
     <div class="faq reveal">
@@ -568,7 +608,6 @@
 <section class="sec dark final" id="contact" aria-labelledby="contact-t">
   <div class="wrap final-in">
     <div class="final-l reveal">
-      <div class="eyebrow">Почнімо</div>
       <h2 id="contact-t">Ваша сім’я заслуговує <em class="mk">на спокій у грошах</em></h2>
       <p>Залиште заявку — я напишу протягом дня й підберу зручний час.</p>
       <ul class="checks checks-dark">
@@ -680,10 +719,9 @@
 <!-- ===================== МОДАЛЬНІ ВІКНА ===================== -->
 <div class="modal" id="m-test" role="dialog" aria-modal="true" aria-labelledby="test-title" hidden>
   <div class="modal-box">
-    <button class="modal-x" type="button" data-close aria-label="Закрити">×</button>
+    <button class="modal-x" type="button" data-close aria-label="Закрити"><i></i><i></i></button>
     <div class="test" id="test">
       <div class="test-head">
-        <div class="eyebrow">Тест · 10 питань</div>
         <h2 id="test-title">Наскільки фінансово захищена ваша сім’я?</h2>
         <div class="test-prog" aria-hidden="true"><i id="testBar"></i></div>
         <p class="test-count" id="testCount">Питання 1 з 10</p>
@@ -696,9 +734,8 @@
 
 <div class="modal" id="m-checklist" role="dialog" aria-modal="true" aria-labelledby="cl-title" hidden>
   <div class="modal-box doc">
-    <button class="modal-x" type="button" data-close aria-label="Закрити">×</button>
+    <button class="modal-x" type="button" data-close aria-label="Закрити"><i></i><i></i></button>
     <div class="doc-body printable">
-      <div class="eyebrow">Подарунок · Ганна Верес</div>
       <h2 id="cl-title">10 витрат, які непомітно з’їдають гроші</h2>
       <p>Відкрийте виписку з картки за останній місяць і пройдіться списком. Відмічайте те, що знайшли у себе.</p>
       <ol class="cl">
@@ -721,9 +758,8 @@
 
 <div class="modal" id="m-guide" role="dialog" aria-modal="true" aria-labelledby="gd-title" hidden>
   <div class="modal-box doc">
-    <button class="modal-x" type="button" data-close aria-label="Закрити">×</button>
+    <button class="modal-x" type="button" data-close aria-label="Закрити"><i></i><i></i></button>
     <div class="doc-body printable">
-      <div class="eyebrow">Подарунок · Ганна Верес</div>
       <h2 id="gd-title">Подушка безпеки за 6 кроків</h2>
       <p>«Подушка» — це гроші, які дають сім’ї час і спокій, якщо дохід зник, хтось захворів або сталося щось непередбачене.</p>
       <ol class="guide">
@@ -743,8 +779,8 @@
 
 <div class="modal" id="m-thanks" role="dialog" aria-modal="true" aria-labelledby="th-title" hidden>
   <div class="modal-box small center">
-    <button class="modal-x" type="button" data-close aria-label="Закрити">×</button>
-    <div class="thanks-ico" aria-hidden="true">✓</div>
+    <button class="modal-x" type="button" data-close aria-label="Закрити"><i></i><i></i></button>
+    <div class="thanks-ico" aria-hidden="true"></div>
     <h2 id="th-title">Дякую, заявку отримано!</h2>
     <p>Я напишу вам протягом дня. А поки — заберіть подарунок: таблицю «Сімейний бюджет».</p>
     <div class="btns center-b"><button class="btn btn-gold" type="button" data-dl-budget>Завантажити таблицю</button><button class="btn btn-line" type="button" data-close>Закрити</button></div>
@@ -753,7 +789,7 @@
 
 <div class="modal" id="m-offer" role="dialog" aria-modal="true" aria-labelledby="of-title" hidden>
   <div class="modal-box doc">
-    <button class="modal-x" type="button" data-close aria-label="Закрити">×</button>
+    <button class="modal-x" type="button" data-close aria-label="Закрити"><i></i><i></i></button>
     <div class="doc-body">
       <h2 id="of-title">Публічна оферта</h2>
       <p><b>1. Сторони.</b> <span data-cfg="legal.fop">ФОП</span> (далі — Виконавець) пропонує будь-якій особі (далі — Клієнт) отримати консультаційні послуги на умовах цієї оферти.</p>
@@ -768,7 +804,7 @@
 
 <div class="modal" id="m-privacy" role="dialog" aria-modal="true" aria-labelledby="pr-title" hidden>
   <div class="modal-box doc">
-    <button class="modal-x" type="button" data-close aria-label="Закрити">×</button>
+    <button class="modal-x" type="button" data-close aria-label="Закрити"><i></i><i></i></button>
     <div class="doc-body">
       <h2 id="pr-title">Політика конфіденційності</h2>
       <p><b>Які дані збираємо:</b> ім’я, телефон, зручний месенджер, коментар, результати тесту чи калькулятора (якщо ви їх додали до заявки).</p>

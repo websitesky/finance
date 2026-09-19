@@ -69,7 +69,7 @@
   }
   burger.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
   nav.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
-  window.addEventListener('resize', function () { if (window.innerWidth > 1240 && nav.classList.contains('open')) setMenu(false); });
+  window.addEventListener('resize', function () { if (window.innerWidth > 1080 && nav.classList.contains('open')) setMenu(false); });
 
   // випадаючий список «Послуги»
   var dd = $('.nav-dd'), ddBtn = $('.nav-dd-btn');
@@ -79,7 +79,7 @@
     dd.addEventListener('click', function (e) { if (e.target.closest('.dd a')) setDd(false); });
     document.addEventListener('click', function (e) { if (!e.target.closest('.nav-dd')) setDd(false); });
     dd.addEventListener('keydown', function (e) { if (e.key === 'Escape' && dd.classList.contains('open')) { e.stopPropagation(); setDd(false); ddBtn.focus(); } });
-    dd.addEventListener('focusout', function (e) { if (window.innerWidth > 1240 && !dd.contains(e.relatedTarget)) setDd(false); });
+    dd.addEventListener('focusout', function (e) { if (window.innerWidth > 1080 && !dd.contains(e.relatedTarget)) setDd(false); });
   }
 
   // активний пункт меню
@@ -125,6 +125,30 @@
     });
   } else {
     $$('.reveal').forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* ---------- Метод: будинок росте разом зі скролом ---------- */
+  var mb = $('.method-build');
+  if (mb && 'IntersectionObserver' in window) {
+    var floors = $$('.floor', mb), band = $('.beam-band', mb), mSteps = $$('.step');
+    var bands = [[470, 44], [330, 140], [306, 36], [192, 126], [92, 100]];
+    var setLevel = function (n) {
+      floors.forEach(function (f) {
+        var k = +(f.getAttribute('class').match(/f(\d)/) || [0, 0])[1];
+        f.classList.toggle('on', k <= n);
+      });
+      mSteps.forEach(function (st, i) { st.classList.toggle('on', i < n); });
+      var b = bands[n - 1];
+      band.style.transform = 'translateY(' + b[0] + 'px) scaleY(' + (b[1] / 100) + ')';
+    };
+    setLevel(1);
+    var stepObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) setLevel(mSteps.indexOf(en.target) + 1); });
+    }, { rootMargin: '-42% 0px -42% 0px' });
+    mSteps.forEach(function (st) { stepObs.observe(st); });
+  } else if (mb) {
+    $$('.floor', mb).forEach(function (f) { f.classList.add('on'); });
+    $$('.step').forEach(function (st) { st.classList.add('on'); });
   }
 
   /* ---------- Модальні вікна ---------- */
@@ -221,7 +245,7 @@
   var tBody = $('#testBody'), tBar = $('#testBar'), tCount = $('#testCount'), tBack = $('#testBack');
   function startTest() { if (qi >= Q.length) { ans = []; qi = 0; } renderQ(); }
   function renderQ() {
-    tBar.style.width = ((qi + 1) / Q.length * 100) + '%';
+    tBar.style.transform = 'scaleX(' + ((qi + 1) / Q.length) + ')';
     tCount.hidden = false;
     tCount.textContent = 'Питання ' + (qi + 1) + ' з ' + Q.length;
     tBack.hidden = qi === 0;
@@ -233,7 +257,7 @@
   function renderRes() {
     var sc = ans.reduce(function (a, b) { return a + b; }, 0);
     var lv = sc <= 7 ? 0 : sc <= 14 ? 1 : 2, L = LV[lv];
-    tBar.style.width = '100%'; tCount.hidden = true; tBack.hidden = true;
+    tBar.style.transform = 'scaleX(1)'; tCount.hidden = true; tBack.hidden = true;
     tBody.innerHTML = '<div class="res"><div class="eyebrow">Ваш результат</div>' +
       '<div class="res-score">' + sc + ' <small>з 20</small></div>' +
       '<span class="res-level ' + L.c + '">' + L.t + '</span>' +
@@ -277,10 +301,10 @@
     $('#seatsLeft').textContent = P.seatsLeft;
     $('#seatsTotal').textContent = P.seatsTotal;
     var bar = $('#seatsBar');
-    var fill = function () { bar.style.width = ((P.seatsTotal - P.seatsLeft) / P.seatsTotal * 100) + '%'; };
+    var fill = function () { bar.style.transform = 'scaleX(' + ((P.seatsTotal - P.seatsLeft) / P.seatsTotal) + ')'; };
     if ('IntersectionObserver' in window) {
       var so = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { fill(); so.disconnect(); } });
-      so.observe(bar);
+      so.observe(bar.parentNode);
     } else fill();
   }
 
