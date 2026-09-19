@@ -186,27 +186,18 @@ mark{background:none;color:inherit;font-weight:600;text-decoration:underline;tex
 .checks li{display:flex;align-items:center;gap:12px}
 .checks li::before{content:'';flex:none;width:20px;height:20px;background:var(--spruce);-webkit-mask:var(--icon-check) center/16px no-repeat;mask:var(--icon-check) center/16px no-repeat}
 .dark .checks li::before{background:var(--ochre)}
-.hero-fig{margin:0;position:relative}
-.house{width:100%;height:auto;max-height:min(78vh,760px);margin:0 auto;overflow:visible;animation:build 1.8s var(--ease-out) .15s both}
-.house .poche{fill:var(--graphite)}
-.house .roof{stroke:var(--graphite);stroke-width:12;stroke-linejoin:miter}
-.house .ln{stroke:var(--graphite);stroke-width:1.1}
-.house .dim{stroke-width:.8;opacity:.7}
-.house .dots circle{fill:var(--graphite)}
-.house .mono{font:500 12px var(--mono);fill:var(--ink2);letter-spacing:.02em}
-.house .lab{fill:var(--graphite);font-size:13px}
-.house .sun{fill:var(--ochre);animation:sun 1.4s var(--ease-out) 1.2s both}
-.house .beam{animation:beam 1.6s var(--ease-out) 1s both}
-.house .photo{animation:beam 1.2s var(--ease-out) .9s both}
-@keyframes build{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
-@keyframes sun{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
-@keyframes beam{from{opacity:0}to{opacity:1}}
-.hero-fig figcaption{margin:14px 0 0;padding-top:12px;border-top:1px solid var(--hair);font:400 .75rem/1.4 var(--mono);color:var(--ink2);letter-spacing:.01em}
+.hero-fig{margin:0;position:relative;width:100%;max-width:540px;justify-self:end}
+.hero-photo{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:76% 18%;border-radius:var(--r-core);box-shadow:0 0 0 6px rgba(30,35,38,.045),0 0 0 7px rgba(30,35,38,.07),0 40px 60px -40px rgba(30,35,38,.5);animation:photoIn 1.4s var(--ease-out) .1s both}
+.hero-chip{position:absolute;left:-28px;bottom:40px;display:flex;flex-direction:column;gap:4px;max-width:260px;padding:16px 20px;border-radius:18px;background:var(--spruce);color:var(--on-dark);box-shadow:0 26px 40px -24px rgba(15,36,31,.8);animation:chipIn 1.2s var(--ease-out) .9s both}
+.hero-chip b{font:400 1.25rem/1.1 var(--serif);color:var(--on-dark)}
+.hero-chip span{font-size:.8125rem;line-height:1.35;color:var(--on-dark2)}
+@keyframes photoIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes chipIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (max-width:960px){
   .hero{min-height:0;display:block}
   .hero-grid{grid-template-columns:1fr}
-  .hero-fig{max-width:560px;margin:8px auto 0}
-  .house{max-height:none}
+  .hero-fig{max-width:480px;margin:12px auto 0;justify-self:center}
+  .hero-chip{left:12px;bottom:24px}
 }
 @media (max-width:600px){
   .btns{flex-direction:column}

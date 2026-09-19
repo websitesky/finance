@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Prata&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/hero-1200.jpg" type="image/jpeg">
+<link rel="preload" as="image" href="assets/hero-1200.webp" imagesrcset="assets/hero-1200.webp 1200w, assets/hero-1920.webp 1920w" imagesizes="(max-width: 960px) 92vw, 540px" type="image/webp">
 <link rel="stylesheet" href="styles.css">
 <script src="config.js"></script>
 <script type="application/ld+json">
@@ -102,50 +102,11 @@
       </ul>
     </div>
     <figure class="hero-fig">
-      <svg class="house" viewBox="0 0 700 700" role="img" aria-label="Будинок у розрізі: у нижній кімнаті — Ганна Верес, фінансова консультантка. Рівні будинку підписані кроками методу: Ясність, Домовленість, Захист, Цілі, Капітал.">
-        <defs>
-          <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#1E2326" stroke-width="1"/></pattern>
-          <linearGradient id="beam" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#E6A82E" stop-opacity=".55"/><stop offset="1" stop-color="#E6A82E" stop-opacity=".04"/></linearGradient>
-        </defs>
-        <rect x="0" y="590" width="700" height="110" fill="url(#hatch)" opacity=".22"/>
-        <polygon points="120,164 320,66 520,164" fill="#F7F8F5"/>
-        <rect class="poche" x="440" y="76" width="22" height="70"/>
-        <rect x="114" y="170" width="412" height="148" fill="#F7F8F5"/>
-        <polygon class="beam" points="526,206 526,290 330,318 190,318" fill="url(#beam)"/>
-        <image class="photo" href="assets/hero-1200.jpg" x="114" y="330" width="412" height="260" preserveAspectRatio="xMaxYMid slice"/>
-        <g class="ln" fill="none">
-          <circle cx="320" cy="124" r="20"/><path d="M300 124h40M320 104v40"/>
-          <path d="M230 172V212"/><path d="M212 228a18 18 0 0 1 36 0z"/>
-          <path d="M160 318V290M160 304H182M300 318V290M300 304H278M172 292H290M182 292V318M282 292V318"/>
-          <path d="M114 236H164M114 236V226M124 236V222M134 236V228"/>
-          <path d="M526 206h14M526 290h14M533 206V290"/>
-        </g>
-        <rect class="poche" x="92" y="318" width="456" height="12"/>
-        <rect class="poche" x="100" y="164" width="440" height="8"/>
-        <rect class="poche" x="100" y="172" width="14" height="146"/>
-        <rect class="poche" x="526" y="172" width="14" height="34"/>
-        <rect class="poche" x="526" y="290" width="14" height="28"/>
-        <rect class="poche" x="100" y="330" width="14" height="260"/>
-        <rect class="poche" x="526" y="330" width="14" height="260"/>
-        <path class="roof" d="M84 172L320 52L556 172" fill="none"/>
-        <rect class="poche" x="100" y="590" width="440" height="34"/>
-        <rect class="poche" x="82" y="624" width="476" height="20"/>
-        <path class="ln" d="M0 590H700" fill="none" stroke-width="1.6"/>
-        <circle class="sun" cx="646" cy="198" r="15"/>
-        <g class="ln dim" fill="none">
-          <path d="M64 170V644"/>
-          <path d="M20 170H92M20 330H92M20 590H92M20 644H92"/>
-        </g>
-        <g class="mono">
-          <text x="20" y="162">+6,20</text><text x="20" y="322">+3,10</text><text x="20" y="582">±0,00</text><text x="20" y="636">−1,20</text>
-        </g>
-        <g class="ln" fill="none"><path d="M548 112H578M548 245H578M548 324H578M548 460H578M548 607H578"/></g>
-        <g class="dots"><circle cx="548" cy="112" r="3"/><circle cx="548" cy="245" r="3"/><circle cx="548" cy="324" r="3"/><circle cx="548" cy="460" r="3"/><circle cx="548" cy="607" r="3"/></g>
-        <g class="mono lab">
-          <text x="586" y="116">Капітал</text><text x="586" y="249">Цілі</text><text x="586" y="328">Захист</text><text x="586" y="464">Домовленість</text><text x="586" y="611">Ясність</text>
-        </g>
-      </svg>
-      <figcaption>Ганна Верес — фінансова консультантка для сімей з дітьми, онлайн</figcaption>
+      <picture>
+        <source type="image/webp" srcset="assets/hero-1200.webp 1200w, assets/hero-1920.webp 1920w" sizes="(max-width: 960px) 92vw, 540px">
+        <img class="hero-photo" src="assets/hero-1920.jpg" srcset="assets/hero-1200.jpg 1200w, assets/hero-1920.jpg 1920w" sizes="(max-width: 960px) 92vw, 540px" alt="Фінансова консультантка Ганна Верес у своєму кабінеті" width="1920" height="1072" fetchpriority="high">
+      </picture>
+      <figcaption class="hero-chip"><b>Ганна Верес</b><span>фінансова консультантка для сімей з дітьми, онлайн</span></figcaption>
     </figure>
   </div>
 </section>
