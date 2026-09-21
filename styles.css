@@ -360,7 +360,7 @@ mark{background:none;color:inherit;font-weight:600;text-decoration:underline;tex
 .price{display:flex;align-items:baseline;gap:14px;justify-content:center}
 .price s{color:var(--on-dark2);font:400 1.05rem var(--mono)}
 .price b{font-size:clamp(2.2rem,4vw,3rem);font-weight:500;letter-spacing:-.05em;color:var(--on-dark);white-space:nowrap}
-@media (max-width:760px){.checkup{grid-template-columns:1fr}.price{justify-content:flex-start}}
+@media (max-width:760px){.checkup{grid-template-columns:minmax(0,1fr);gap:22px}.checkup-l,.checkup-r{min-width:0}.price{justify-content:flex-start;flex-wrap:wrap;gap:4px 14px}.price b{font-size:clamp(2rem,10vw,2.75rem)}.checkup-r .btn{width:100%}}
 .tariff{padding:34px 28px 28px;row-gap:14px}
 .tariff .t-name small{display:block;margin-top:8px;color:var(--ink2);font-size:.875rem;line-height:1.4}
 .tariff h3{font-size:1.8rem}
@@ -609,4 +609,12 @@ mark{background:none;color:inherit;font-weight:600;text-decoration:underline;tex
   body.printing .modal-box{max-height:none;overflow:visible;box-shadow:none;padding:0;animation:none}
   body.printing .modal-x,body.printing .doc-actions{display:none !important}
   body.printing .cl label{box-shadow:none;border:1px solid #ddd}
+}
+
+/* ---------- Мобільна страховка ---------- */
+@media (max-width:760px){
+  .grid3 > *,.formats > *,.launch > *,.program > *,.final-in > *,.about > *,.b2b > *,.method > *{min-width:0}
+  .card h3,.card p,.checkup h3,.checkup p{overflow-wrap:anywhere}
+  .btn{max-width:100%}
+  .btn-2l small{white-space:normal}
 }
